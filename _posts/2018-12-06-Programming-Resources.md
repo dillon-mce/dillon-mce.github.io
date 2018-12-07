@@ -1,0 +1,21 @@
+---
+title: "Programming Resources"
+tags: lambda
+---
+This is just a list of some good resources I've come across in my time trying to learn programming. It isn't comprehensive and it isn't necessarily endorsed by Lambda School, but I've had some students ask about resources to look into over the break so I thought I'd put my list together in one place. If you have a good resource you think is worth adding to the list, let me know and I'll take a look.
+
+### General Computer Science & Programming
+- [Kahn Academy - Computer Science](https://www.khanacademy.org/computing/computer-science)
+- [Kahn Academy - Hour Of Code](https://www.khanacademy.org/hourofcode)
+- [Codecademy](https://www.codecademy.com/catalog/subject/all)
+- [FreeCodeCamp](https://learn.freecodecamp.org/) (especially the Javascript Algorithm section)
+- [Udemy](https://www.udemy.com/topic/swift/) (link goes to the Swift category)
+- [Swift Playgrounds](https://www.apple.com/swift/playgrounds/) (on iPad)
+
+### iOS (and MacOS) Specific Resources
+- [The Swift Programming Language Guide](https://itunes.apple.com/us/book/the-swift-programming-language-swift-4-2/id881256329?mt=11) (**Read this!** Really. Download it on your phone and read one section every day while you're eating breakfast instead of scrolling through Twitter or Instagram or whatever. It'll take 15 minutes and you'll be amazed at how much you pick up.)
+- [RayWenderlich](https://www.raywenderlich.com/)
+- [Hacking With Swift](https://www.hackingwithswift.com/)
+- [Developing iOS 11 Apps with Swift by Stanford](https://itunes.apple.com/us/course/developing-ios-11-apps-with-swift/id1309275316)
+- [Awesome Swift](https://github.com/matteocrippa/awesome-swift) - list of libraries and resources
+- [NSHipster](https://nshipster.com/)

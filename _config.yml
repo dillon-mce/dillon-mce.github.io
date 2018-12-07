@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Some Catchy Title"
+title                    : "dillon-mce.github.io"
 title_separator          : "|"
 name                     : "Dillon McElhinney"
 description              : "A simple, central place where Dillon writes about what he's learning."
@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "Dillon McElhinney"
   avatar           : "/assets/images/bio-photo-dillon.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Currently studying in Lamba School's iOS Course"
+  bio              : "Currently acting as Section Lead for one of Lamba School's iOS Courses"
   location         : "Colorado"
   email            : "dillon.mce@gmail.com"
   links:
