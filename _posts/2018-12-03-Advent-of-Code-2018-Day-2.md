@@ -1,6 +1,7 @@
 ---
 title: "AoC 2018 - Day 2"
 tags: adventofcode
+excerpt: "My understanding of the second day’s first problem was this: given a list of IDs like `\"abcdef bababc abbcde abcccd aabcdd abcdee ababab\"`, return a checksum which is the number of IDs that contain exactly two of the same character *times* the number of IDs that contain exactly three of the same character."
 ---
 ## [Problem 1](https://adventofcode.com/2018/day/2)
 My understanding of the second day’s first problem was this: given a list of IDs like `"abcdef bababc abbcde abcccd aabcdd abcdee ababab"`, return a checksum which is the number of IDs that contain exactly two of the same character *times* the number of IDs that contain exactly three of the same character. IDs can count towards both numbers. The sample returns 12.

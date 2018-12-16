@@ -1,6 +1,7 @@
 ---
 title: "AoC 2018 - Set up"
 tags: adventofcode
+excerpt: "The first (meta) problem with Advent of Code is to figure out how you’re going to organize your code for these challenges. How get the input into a usable format, how to keep things in order and minimize the time it takes, etc."
 ---
 ### Original Set up
 The first (meta) problem with Advent of Code is to figure out how you’re going to organize your code for these challenges. How get the input into a usable format, how to keep things in order and minimize the time it takes, etc.

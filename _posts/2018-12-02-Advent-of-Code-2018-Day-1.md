@@ -1,6 +1,7 @@
 ---
 title: "AoC 2018 - Day 1"
 tags: adventofcode
+excerpt: "My understanding of day 1’s first problem was this: given a string like `\"+1, -2, +3, +1\"` , return the Int it reduces to if you add and subtract all the numbers, starting at 0."
 ---
 ## [Problem 1](https://adventofcode.com/2018/day/1)
 My understanding of day 1’s first problem was this: given a string like `"+1, -2, +3, +1"` , return the Int it reduces to if you add and subtract all the numbers, starting at 0. The actual input was much longer and the elements were separated by newlines instead of spaces, but I accounted for that in my function.
