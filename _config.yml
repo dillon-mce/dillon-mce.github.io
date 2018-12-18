@@ -193,7 +193,6 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-
 # Markdown Processing
 kramdown:
   input: GFM
@@ -204,7 +203,13 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    wrap: true
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
 
 # Sass/SCSS
 sass:

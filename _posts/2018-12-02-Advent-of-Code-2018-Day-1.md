@@ -18,7 +18,7 @@ Swift has a great method for splitting strings into an array, separated by built
 The result just needed to start at 0, so I set that. I also defined a custom CharacterSet for myself so I could use that to get the number without the sign in front of it. `let characterSet = CharacterSet(charactersIn: "+-"`
 
 Here is my original pass at the calculations, using a for loop:
-{% highlight swift %}
+```swift
 for element in array {
         guard let number = Int(element.components(separatedBy: characterSet).joined()) else { continue }
         if element.first == "+" {
@@ -27,17 +27,17 @@ for element in array {
             result -= number
         }
     }
-{% endhighlight %}
+```
 I make sure I can get the number, and then if the element starts with `"+"` I add it to the result, and if it starts with `"-"` I subtract it.
 
 Here is the method with filter and reduce:
-{% highlight swift %}
+```swift
 let additions = array.filter({ $0.hasPrefix("+") }).compactMap() {Int($0.components(separatedBy: characterSet).joined())}
     let subtractions = array.filter({ $0.hasPrefix("-") }).compactMap() {Int($0.components(separatedBy: characterSet).joined())}
 
     result = additions.reduce(result, +)
     result = subtractions.reduce(result, -)
-{% endhighlight %}
+```
 I filter by the plus or minus sign and then compact map the results to integers of the string without the plus and minus signs. Then I can just set the result to be the reductions of the two arrays.
 
 At the very end I print and return the result. Problem solved. The answer for my input was 592.
@@ -63,7 +63,7 @@ I used the same method as in part 1 to split the array and many of the variables
 - I also added a count variable that just kept track of how many times I needed to loop through the while loop to arrive at an answer (mostly because I was curious).
 
 My while loop looks like this:
-{% highlight swift %}
+```swift
 while result == nil {
         count += 1
         for element in array {
@@ -80,7 +80,7 @@ while result == nil {
             frequenciesHit.insert(frequency)
         }
     }
-{% endhighlight %}
+```
 The logic in the for loop is largely the same as part 1, except that I had to switch back to the for loop method so I could get access to each frequency as we went. Then I just check to see if the frequency has been hit before, set it as the result and break if it has, and add it to the set of frequencies hit if it hasn’t. And I just keep looping that loop until I get a result.
 
 Once I get out of the while loop I print and return the result. Problem solved. The answer for my input was 241 (found on the 137th time through the while loop) and it took a little over 8 seconds to arrive at that answer running in a playground on my 2018 MacBook.

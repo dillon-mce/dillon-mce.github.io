@@ -17,7 +17,7 @@ My understanding of the second day’s first problem was this: given a list of I
 Again, I start my function by saying `let array = string.components(separatedBy: .whitespacesAndNewlines)`. That gets me an array of strings which are the IDs.
 
 Then I write my helper function.
-{% highlight swift %}
+```swift
 func containsMultiples(_ string: String, count: Int) -> Bool {
     let letters = Set(string)
     for letter in letters {
@@ -26,16 +26,16 @@ func containsMultiples(_ string: String, count: Int) -> Bool {
     }
     return false
 }
-{% endhighlight %}
+```
 This loops through each letter in the string, creates a filtered array of letters that are the same as the current letter, and checks if the filtered array’s count is the same as the count parameter given when the function is called. It returns true for the first one it finds, and if it doesn’t find any it returns false.
 
 After that, the rest of the `produceCheckSum` function is pretty straightforward:
-{% highlight swift %}
+```swift
 let contains2 = array.filter() { containsMultiples($0, count: 2) }.count
 let contains3 = array.filter() { containsMultiples($0, count: 3) }.count
 
 let result = contains2 * contains3
-{% endhighlight %}
+```
 I get one array which is all the IDs that have at least one set of two identical characters, and then I get an array which is all the IDs that have at least one set of three identical characters, and then I multiply their counts together.
 
 The answer for my input was 5000, and with the command line method described in [my AoC Setup post]({{"/Advent-of-Code-2018-Setup" | absolute_url}}), it takes about 30 milliseconds to find it.
@@ -51,7 +51,7 @@ I would describe the problem for part 2 like this: given a list of IDs like `"ab
 
 ### Implementation
 I break up the array in the same way described above. Then, my helper function looks like this:
-{% highlight swift %}
+```swift
 func filterStrings(_ string1: String, _ string2: String) -> Bool {
     var mismatches = 0
     let array1 = Array(string1)
@@ -61,11 +61,11 @@ func filterStrings(_ string1: String, _ string2: String) -> Bool {
     }
     return mismatches < 2
 }
-{% endhighlight %}
+```
 I start with the mismatches at 0, loop through the indexes in the first array, and check them against the character at the same index in the other array. Then, return a bool that is if the mismatches is less than 2. This method assumes both of the ID strings are the same length, which is how the input is formatted. If the IDs weren’t all the same length, you’d probably want to check for that.
 
-The rest of my findCommonLetters function looks like this:
-{% highlight swift %}
+The rest of my `findCommonLetters()` function looks like this:
+```swift
 var resultString = ""
 var filtered: [String] = []
 
@@ -79,7 +79,7 @@ let array2 = Array(filtered[1])
 for i in 0..<array1.count {
     if array1[i] == array2[i] { resultString += String(array1[i]) }
 }
-{% endhighlight %}
+```
 First, I define a string and an array to hold my results. Then I loop through the IDs, filter them using my helper function,  and break out of the loop if the count of the filtered array is greater than 1. Then I grab references to the two ID arrays and loop through them, check if the letters are the same and append the letter to my result string if they are.
 
 The answer for my input was `"ymdrchgpvwfloluktajxijsqb"` and it takes about 0.15 seconds to find it running as a Swift script.
