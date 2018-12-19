@@ -4,7 +4,7 @@ tags: adventofcode
 excerpt: "My understanding of the second day’s first problem was this: given a list of IDs like `\"abcdef bababc abbcde abcccd aabcdd abcdee ababab\"`, return a checksum which is the number of IDs that contain exactly two of the same character *times* the number of IDs that contain exactly three of the same character."
 ---
 ## [Problem 1](https://adventofcode.com/2018/day/2)
-My understanding of the second day’s first problem was this: given a list of IDs like `"abcdef bababc abbcde abcccd aabcdd abcdee ababab"`, return a checksum which is the number of IDs that contain exactly two of the same character *times* the number of IDs that contain exactly three of the same character. IDs can count towards both numbers. The sample returns 12.
+My understanding of the second day’s first problem was this: given a list of IDs like `"abcdef bababc abbcde abcccd aabcdd abcdee ababab"`, return a checksum which is the number of IDs that contain exactly two of the same character *times* the number of IDs that contain exactly three of the same character. IDs can count towards both numbers. The sample returns `12`.
 
 ### Method
 - Break up the input into an array of the individual IDs
@@ -41,7 +41,7 @@ I get one array which is all the IDs that have at least one set of two identical
 The answer for my input was 5000, and with the command line method described in [my AoC Setup post]({{"/Advent-of-Code-2018-Setup" | absolute_url}}), it takes about 30 milliseconds to find it.
 
 ## [Problem 2](https://adventofcode.com/2018/day/2#part2)
-I would describe the problem for part 2 like this: given a list of IDs like `"abcde fghij klmno pqrst fguij axcye wvxyz"`, return a string that is the common letters between the two IDs that only differ by one letter. The sample returns “fgij”.
+I would describe the problem for part 2 like this: given a list of IDs like `"abcde fghij klmno pqrst fguij axcye wvxyz"`, return a string that is the common letters between the two IDs that only differ by one letter. The sample returns `"fgij"`.
 
 ### Method
 - Break up the array into individual IDs

@@ -159,7 +159,7 @@ I get my claims from the `parseInput()` function, and make a set equal from that
 
 The answer for my input was claim #1019 and it takes about 0.2 seconds to find it running the script on the command line.
 
-### Reflections
+## Reflections
 - This problem really stretched my memory of high school geometry class, and forced me to think about how to deal with a coordinate system in code.
 - It also gave me the opportunity to explore the capabilities of Sets a little more, as well as making custom structs that are Hashable.
 

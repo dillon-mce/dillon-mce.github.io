@@ -4,7 +4,7 @@ tags: adventofcode
 excerpt: "My understanding of day 1’s first problem was this: given a string like `\"+1, -2, +3, +1\"` , return the Int it reduces to if you add and subtract all the numbers, starting at 0."
 ---
 ## [Problem 1](https://adventofcode.com/2018/day/1)
-My understanding of day 1’s first problem was this: given a string like `"+1, -2, +3, +1"` , return the Int it reduces to if you add and subtract all the numbers, starting at 0. The actual input was much longer and the elements were separated by newlines instead of spaces, but I accounted for that in my function.
+My understanding of day 1’s first problem was this: given a string like `"+1, -2, +3, +1"` , return the Int it reduces to if you add and subtract all the numbers, starting at 0. The actual input was much longer and the elements were separated by newlines instead of spaces, but I accounted for that in my function. The sample data returns `3`
 
 ### Method
 Here’s how I broke down the problem:
@@ -43,7 +43,7 @@ I filter by the plus or minus sign and then compact map the results to integers 
 At the very end I print and return the result. Problem solved. The answer for my input was 592.
 
 ## [Problem 2](https://adventofcode.com/2018/day/1#part2)
-I would describe the second problem like this: given a string like `"+1, -2, +3, +1"`, return the first integer that is achieved twice in the sequence. If none is found the first time through, loop through it until you find one.
+I would describe the second problem like this: given a string like `"+1, -2, +3, +1"`, return the first integer that is achieved twice in the sequence. If none is found the first time through, loop through it until you find one. The sample data returns `2`
 
 ### Method
 - Break up the string into an array

@@ -13,14 +13,14 @@ In my playground page I defined a function called something relevant like `calcu
 ### Current Setup
 Around day 9 I ran into a wall with playgrounds. It was eating memory at an unbelievable rate and taking **way too long** to calculate. That is when I started looking for other options.
 
-I am only tentatively comfortable with the command line, but I tried just running `swift Day-9.swift` and found that it worked. It compiled and ran and printed the print statements out to the terminal. I’m sure that probably sound obvious to you CLI experts, but I don’t really know how that stuff works. So it was cool to see.
+I am only tentatively comfortable with the command line, but I tried just running `swift Day-9.swift` in Terminal and found that it worked. It compiled and ran (much faster than the playground) and printed the print statements out to the terminal. I’m sure that probably sound obvious to you CLI experts, but I don’t really know how that stuff works. So it was cool to see.
 
-My hurdle then was getting the input data passed to the file. I tried just putting it all into the same file, but some of the inputs are really long and because of the way it compiles, you have to put the constant above where you call the function with it, which was just ugly. (I’m sure there’s a flag you can add to the `swift` command that would fix that, but I couldn’t figure it out, so I moved on.) After some googling, I found that you can get a reference to the command line arguments with “CommandLine.arguments”, the first being the file itself and the second being whatever is passed in. So I could save my input data in a separate file and run the code by calling `swift Day-1.swift "$(cat Day-1-Input.txt)"`. Problem solved!
+My hurdle then was getting the input data passed to the file. I tried just putting it all into the same file, but some of the inputs are really long and because of the way it compiles, you have to put the constant above where you call the function with it, which was just ugly. (I’m sure there’s a flag you can add to the `swift` command that would fix that, but I couldn’t figure it out, so I moved on.) After some googling, I found that you can get a reference to the command line arguments inside of the Swift file with “CommandLine.arguments”, the first argument being the file itself and the second being whatever is passed in. So I could save my input data in a separate file and run the code by calling `swift Day-1.swift "$(cat Day-1-Input.txt)"`. Problem solved!
 
 ### Getting Into Swift Scripting
-That is when I started down the rabbit hole of scipting with Swift. My first discovery was that you can add a shebang to the beginning of the file and run it as it’s own script. For swift it is `#!/usr/bin/swift`. You also need to modify the permissions with `chmod +x Day-1.swift` then all you need to run it is  `./Day-1.swift "$(cat Day-1-Input.txt)"`. That was a lot better but it still involved a lot of typing and relied on my typing everything correctly.
+That is when I started down the rabbit hole of scipting with Swift. My first discovery was that you can add a shebang to the beginning of the file and run it as it’s own script. For swift it is `#!/usr/bin/swift`. You also need to modify the permissions with `chmod +x Day-1.swift` then all you need to run it is to type `./Day-1.swift "$(cat Day-1-Input.txt)"` into Terminal. That was a lot better, but it still involved a lot of typing and relied on my typing everything exactly right.
 
-So I decided to see if I could write a simple bash script that would run this command for me. After reading through [this very helpful website about shell scripts](http://linuxcommand.org/lc3_writing_shell_scripts.php)  I added a script called “adventofcode” to my `usr/local/bin` directory (I don’t know if that is the right place to put these things, but it seems to work.) I declared it as a bash script with `#!/bin/bash` and wrote:
+So I decided to see if I could write a simple bash script that would run this command for me. After reading through [this very helpful website about shell scripts](http://linuxcommand.org/lc3_writing_shell_scripts.php), I added a script called “adventofcode” to my `usr/local/bin` directory (I don’t know if that is the right place to put these things, but it seems to work.) I declared it as a bash script with `#!/bin/bash` and wrote:
 
 ```
 if [ $1 != ""]; then
@@ -34,7 +34,7 @@ fi
 
 This basically says, if we’re given an input, try to call that long and messy swift script with the associated input data. Otherwise, tell the user they are doing it wrong.
 
-Of course, I had to modify the permissions on this new adventofcode script as well, but after I did, it works exactly as I had hoped. (One thing to note is that it is using a relative path to the swift script, so it only works if you call it from the directory where that Swift script lives.)
+Of course, I had to modify the permissions on this new adventofcode script as well, but after I did, it works exactly as I had hoped. (One thing to note is that it is using a relative path to the Swift script, so it only works if you call it from the directory where that Swift script lives.)
 
 I quickly realized that during testing I would want to call my script without passing input data so I added a case statement to my bash script so that it looked  like this:
 ```
