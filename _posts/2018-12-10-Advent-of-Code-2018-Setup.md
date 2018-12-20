@@ -59,7 +59,7 @@ fi
 This says, if I call adventofcode with a `-t` or `--test` flag, it will run the script with no input, otherwise it will run it with the associated input. (Again, I know very little about bash, so there is probably a better way to organize this.)
 
 ### Cleaning Things Up
-Now I had a nice (and relatively pretty) way to run my code once I had something to run. But I found as I was moving things over to individual swift files that I generally wanted the same structure for each of these files:
+Now I had a nice (and relatively pretty) way to run my code once I had something to run. But I found as I was moving things over to individual Swift files that I generally wanted the same structure for each of these files:
 - I wanted to declare it as a Swift script
 - I wanted to import Cocoa
 - I wanted to set my inputData as the command line argument or an empty string

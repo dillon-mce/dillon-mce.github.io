@@ -61,9 +61,11 @@ func parseInput(_ string: String) -> [String: [Date]] {
     return timestampDict
 }
 ```
-I split the input data into an array separated by newlines, and I sort it because the input was not in chronological order. At first I was worried that I would have to write some logic to get it to sort correctly, but it worked out of the box because of the format of the dates in the input string. I make a `dateFormatter` whose data format matches that of the data, a `currentGuard` variable to hold the guard I’m currently working with, and a `timestampDict` variable to hold the parsed data.
+I split the input data into an array separated by newlines, and I sort it because the input was not in chronological order. At first I was worried that I would have to write some logic to get it to sort correctly, but it worked out of the box because of the format of the dates in the input string. I make a `dateFormatter` whose date format matches that of the data, a `currentGuard` variable to hold the guard I’m currently working with, and a `timestampDict` variable to hold the parsed data.
+
 Because each guard has a line that says when they begin their shift, followed by alternating lines saying when they fell asleep and when they woke back up, and because every guard starts their shift awake and always wakes back up for every time they fall asleep, all I need is the dates following the line that says which guard started their shift. I know that the even-indexed elements of the array will all be “falling asleep” dates and all the odd-indexed elements will be “waking up” dates. This becomes relevant later.
-So I split each line on the bracket characters and if the line starts with `"Guard"`, then I know it is the beginning of a new shift, so I just set `currentGuard` to that guard’s ID number and continue. For each subsequent line until I hit another that starts with “Guard” I just pull out the date and append it to the array associated with the current Guard’s ID. And at the end I return the dictionary.
+
+So I split each line on the bracket characters and if the line starts with `"Guard"`, then I know it is the beginning of a new shift, so I just set `currentGuard` to that guard’s ID number and continue. For each subsequent line until I hit another that starts with “Guard” I pull out just the date and append it to the array associated with the current Guard’s ID. And at the end I return the dictionary.
 
 My function for counting the minutes each guard was asleep looks like this:
 ```swift
@@ -81,7 +83,7 @@ func countMinutesAsleep(_ guardDict: [String: [Date]]) -> [String: Int] {
     return sleepCount
 }
 ```
-I start by making a dictionary to hold the guard IDs and the number of minutes they’ve been asleep. Then I loop through all the keys and values in the dictionary. Inside of that I loop through each index in 0 up to 1 less that the value’s count. The value here being the array of dates associated with that guard. I only check the even-indexed elements, because those are the falling asleep dates. I make a DateInterval starting at the falling asleep date and ending at the waking up date. Then I get an Int of the interval property on that. The interval property value is n seconds, so I divide that by 60 to get the minute value. Finally I add that to the value for the dictionary at the current key. Once I’m out of both loops, I return the dictionary.
+I start by making a dictionary to hold the guard IDs and the number of minutes they’ve been asleep. Then I loop through all the keys and values in the dictionary. Inside of that I loop through each index in 0 up to 1 less that the value’s count. The value here being the array of dates associated with that guard. I only check the even-indexed elements, because those are the falling asleep dates. I make a DateInterval starting at the falling asleep date and ending at the waking up date. Then I get an Int of the interval property from that. The interval property value is in seconds, so I divide that by 60 to get the minute value. Finally I add that to the value for the dictionary at the current key. Once I’m out of both loops, I return the dictionary.
 
 My function for counting the times a particular guard was a sleep at each minute looks like this:
 ```swift
@@ -104,7 +106,7 @@ func countTimesAsleepAtMinute(_ dates: [Date]) -> [Int: Int] {
     return minuteDict
 } I
 ```
-I make a dateFormatter that will pull out just the minute value from a date (because that is all that is relevant in the given data), and a dictionary to hold the minutes and counts. Then I loop through every value from 0 up to 60 (all of the minute values), and inside of that loop through all of the dates in the array. Again, I only check the even-indexed items because those are the “falling asleep” dates. I use my minute formatted to get the `fallAsleep` minute and the `wakeUp` minute and if the current minute is between those two values, I add 1 to the dictionary value at the current minute’s key. This is not the most efficient way to do this, but it works and is efficient enough for the given data.
+I make a dateFormatter that will pull out just the minute value from a date (because that is all that is relevant in the given data), and a dictionary to hold the minutes and counts. Then I loop through every value from 0 up to 60 (all of the minute values), and inside of that, loop through all of the dates in the array. Again, I only check the even-indexed items because those are the “falling asleep” dates. I use my minute formatted to get the `fallAsleep` minute and the `wakeUp` minute and if the current minute is between those two values, I add 1 to the dictionary value at the current minute’s key. This is not the most efficient way to do this, but it works and is efficient enough for the given data.
 
 Finally, my main function to solve the problem looks like this:
 ```swift
@@ -148,22 +150,14 @@ func countTimesAsleepAtMinute(_ dates: [String: [Date]]) -> [String: [Int: Int]]
 
     var minuteDict: [String: [Int: Int]] = [:]
     for (guardID, times) in dates {
-        for minute in 0..<60 {
-            for index in 0..<times.count-1 {
-                if index % 2 == 0 {
-                    guard let fallAsleep = Int(minuteFormatter.string(from: times[index])),
-                        let wakeUp = Int(minuteFormatter.string(from: times[index+1])) else { continue }
-                    if minute >= fallAsleep && minute < wakeUp {
-                        minuteDict[guardID, default: [:]][minute, default: 0] += 1
-                    }
-                }
-            }
-        }
+      for (guardID, times) in dates {
+      minuteDict[guardID] = countTimesAsleepAtMinute(times)
+      ß}
     }
     return minuteDict
 }
 ```
-The only real difference from the previous one is that I’ve added yet another loop outside of the others that loops through all the keys and values in the dictionary we’re given, and it saves the resulting array into the result dictionary, using the guard’s ID as the key. This is where the efficiency of those inner loops starts to make a difference, but for the given data, the extra time it takes is still negligible.
+I’ve added yet another loop outside of the others calls my old `countTimesAsleepAtMinute()` function, and it saves the resulting array into the result dictionary, using the guard’s ID as the key. This is where the efficiency of those inner loops starts to make a difference, but for the given data, the extra time it takes is still negligible.
 
 My main function looks like this:
 ```swift

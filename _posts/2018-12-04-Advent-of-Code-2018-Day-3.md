@@ -4,7 +4,7 @@ tags: adventofcode
 excerpt: "My understanding of day 3’s first problem is this: given a string that is a list of fabric claims like `/"#1 @ 1,3: 4x4\n#2 @ 3,1: 4x4\n#3 @ 5,5: 2x2\"` on a large grid of fabric (with the coordinates starting at the top left), return an Int which is the number square inches claimed more than once."
 ---
 ## [Problem 1](https://adventofcode.com/2018/day/3)
-My understanding of day 3’s first problem is this: given a string that is a list of fabric claims like `"#1 @ 1,3: 4x4\n#2 @ 3,1: 4x4\n#3 @ 5,5: 2x2"` on a large grid of fabric (with the coordinates starting at the top left), return an Int which is the number square inches claimed more than once. The sample data returns 4.
+My understanding of day 3’s first problem is this: given a string that is a list of fabric claims like `"#1 @ 1,3: 4x4\n#2 @ 3,1: 4x4\n#3 @ 5,5: 2x2"` on a large grid of fabric (with the coordinates starting at the top left), return an Int which is the number square inches claimed more than once. The sample data returns `4`.
 
 ### Method
 To solve this problem I needed:
@@ -128,7 +128,7 @@ I get an array of claims from my `parseInput()` function and make an empty array
 The answer for my input was 111326 and it takes about 0.6 seconds to find the answer using the swift script method described in [my AoC setup post]({{"/Advent-of-Code-2018-Setup" | absolute_url}}).
 
 ## [Problem 2](https://adventofcode.com/2018/day/3#part2)
-Part two was much simpler, now that I had all the infrastructure built out. The problem is basically: given a string of claims, return the ID of the single claim that doesn’t overlap with any others. The sample data returns #3.
+Part two was much simpler, now that I had all the infrastructure built out. The problem is basically: given a string of claims, return the ID of the single claim that doesn’t overlap with any others. The sample data returns `#3`.
 
 ### Method
 - Use the same `parseInput()` method to get an array of claims.
