@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "dillon-mce.github.io"
+title                    : "dillon-mce.com"
 title_separator          : "|"
 name                     : "Dillon McElhinney"
 description              : "A simple, central place where Dillon writes about what he's learning."
