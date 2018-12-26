@@ -1,10 +1,10 @@
 ---
 title: "AoC 2018 - Day 4"
 tags: adventofcode
-excerpt: "My understanding of Day 4’s problem is this: given a string like the one below, return an Int that is the minute at which the guard who spent the most total minutes asleep was asleep the most, times that guard’s ID number."
+excerpt: "My understanding of Day 4’s first problem is this: given a string like the one below, return an Int that is the minute at which the guard who spent the most total minutes asleep was asleep the most, times that guard’s ID number."
 ---
 ## [Problem 1](https://adventofcode.com/2018/day/4)
-My understanding of Day 4’s problem is this: given a string like the one below, return an Int that is the minute at which the guard who spent the most total minutes asleep was asleep the most, times that guard’s ID number. The sample data returns `240`.
+My understanding of Day 4’s first problem is this: given a string like the one below, return an Int that is the minute at which the guard who spent the most total minutes asleep was asleep the most, times that guard’s ID number. The sample data returns `240`.
 Sample data:
 ```
 [1518-11-01 00:00] Guard #10 begins shift
