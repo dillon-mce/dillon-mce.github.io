@@ -60,13 +60,13 @@ I also wrote a few extensions to help me get the look I had laid out in Sketch. 
 ```swift
 extension UIColor {
 ///Initializes a UIColor with 8-bit RGBA values. Provide values from 0 to 255
-    convenience init(_ red: CGFloat, _ green: CGFloat, _ blue: CGFloat, _ alpha: CGFloat) {
+    convenience init(_ red: CGFloat, _ green: CGFloat, _ blue: CGFloat, _ alpha: CGFloat = 255) {
         self.init(red: red/255, green: green/255, blue: blue/255, alpha: alpha/255)    }
 
-    static let lightBlue = UIColor(66, 207, 242, 255)
+    static let lightBlue = UIColor(66, 207, 242)
     static let placeholderBlue = UIColor(80, 158, 210, 127)
-    static let textBlue = UIColor(80, 158, 210, 255)
-    static let darkBlue = UIColor(87, 99, 176, 255)
+    static let textBlue = UIColor(80, 158, 210)
+    static let darkBlue = UIColor(87, 99, 176)
 }
 ```
 
