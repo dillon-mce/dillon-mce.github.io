@@ -22,10 +22,6 @@ med-checker-gallery:
   - url: /assets/images/hackathon/Check-Meds-Screenshot-2.png
     image_path: /assets/images/hackathon/Check-Meds-Screenshot-2.png
     alt: "Filtered Med Checker Screenshot"
-loading-screen-gallery:
-  - url: /assets/images/hackathon/Loading-Screen.GIF
-    image_path: /assets/images/hackathon/Loading-Screen.GIF
-    alt: "Loading Screen"
 ---
 Our team decided to build an app that would assist Life Insurance agents in quickly figuring out what products might be a good fit for their clients. At the moment the only way to do that is to look up the information in a series of charts provided by the various carriers of life insurance products. [These charts](https://naauniversity.com/assets/uploads/2018/02/BuildCharts021918-4.pdf) have a good amount of variation between the carriers and they haven’t really been consolidated well anywhere that we could find. [The medication charts](https://naauniversity.com/assets/uploads/2014/08/MedLists3opt.pdf) are even worse. They are super long and very inconvenient to work with. We felt that an app that reduced this complexity and only showed the user (the insurance agent) the information that they cared about would be welcomed in the industry and hopefully provide enough value that people would be willing to pay for it.
 
