@@ -16,6 +16,7 @@ This is just a list of some good resources I've come across in my time trying to
 - [Leet Code](https://leetcode.com/)
 - [HackerRank](https://www.hackerrank.com/)
 - [CoderByte](https://www.coderbyte.com/)
+- [Grokking Algorithms](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230) - Easy to read book on algorithms
 
 
 ### iOS (and MacOS) Specific Resources
@@ -27,4 +28,4 @@ This is just a list of some good resources I've come across in my time trying to
 - [Developing iOS 11 Apps with Swift by Stanford](https://itunes.apple.com/us/course/developing-ios-11-apps-with-swift/id1309275316)
 - [Awesome Swift](https://github.com/matteocrippa/awesome-swift) - list of libraries and resources
 - [NSHipster](https://nshipster.com/)
-- [Erica Sadun](https://ericasadun.com/)
+- [App Development with Swift](https://itunes.apple.com/us/book/app-development-with-swift/id1219117996?mt=11) - Good introduction to developing iOS apps
