@@ -1,7 +1,7 @@
 ---
 title: "Algorithms in Swift - Intro"
 tags: algorithms swift
-excerpt: ""
+excerpt: "In this post, I want to talk about algorithms in general, take a look at the binary search algorithm, and examine how to think about the complexity of an algorithm."
 ---
 I am looking for an excuse to learn more about algorithms, so I am going to write a series of posts that cover some of the most common ones and examine at what they might look like in Swift. I know algorithms often feel like an academic topic – something for nerds in computer science classes. They can be intimidating because their explanations and examples tend to be math-heavy and there is a lot of hard-to-decipher jargon out there about them. But they are really useful for solving interesting problems, and knowing how to pick the right algorithm for the problem at hand can make you seem like a programming genius! In this post, I want to talk about algorithms in general, take a look at the binary search algorithm, and examine how to think about the complexity of an algorithm.
 
