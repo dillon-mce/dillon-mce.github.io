@@ -1,3 +1,5 @@
 main:
+  - title: "CV"
+    url: "/cv"
   - title: "About"
     url: "/about"
