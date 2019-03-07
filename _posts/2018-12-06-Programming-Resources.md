@@ -2,7 +2,7 @@
 title: "Programming Resources"
 tags: lambda
 ---
-This is just a list of some good resources I've come across in my time trying to learn programming. It isn't comprehensive and it isn't necessarily endorsed by Lambda School, but I've had some students ask about resources to look into over the break so I thought I'd put my list together in one place. If you have a good resource you think is worth adding to the list, let me know and I'll take a look.
+This is just a list of some good resources I've come across in my time trying to learn programming. It isn't comprehensive, but I've had some people ask about resources to look into, so I thought I'd put my list together in one place. If you have a good resource you think is worth adding to the list, let me know and I'll take a look.
 
 ### General Computer Science & Programming
 - [Kahn Academy - Computer Science](https://www.khanacademy.org/computing/computer-science)
