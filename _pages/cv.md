@@ -51,7 +51,7 @@ Recruited/developed/coordinated volunteers. Various production and media-related
 **[Calvary Baptist](https://www.calvaryjomo.com/) - Technical Intern | 09/13 - 05/14**  
 Managed production of weekend services and oversaw audio, video and lighting systems. Produced weekly bulletin and maintained the website.
 
-## What the professionals are saying:
+## What the pros are saying:
 
 {% include feature_row id="feature_row_1" type="left" %}
 {% include feature_row id="feature_row_2" type="right" %}
