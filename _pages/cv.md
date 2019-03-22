@@ -4,17 +4,6 @@ permalink: /cv/
 author_profile: true
 title: "Curriculum Vitae"
 
-feature_row:
-  - image_path: /assets/images/cv/dave-delong.jpg
-    alt: "Dave DeLong"
-    excerpt: "*\"He's a real developer\"*\n\n[Dave DeLong](https://davedelong.com/)"
-  - image_path: /assets/images/cv/erica-sadun.png
-    alt: "Erica Sadun"
-    excerpt: "*\"I think he knows Swift\"*\n\n[Erica Sadun](https://ericasadun.com/)"
-  - image_path: /assets/images/cv/andrew-madsen.jpg
-    alt: "Andrew Madsen"
-    excerpt: "*\"He was one of my students\"*\n\n[Andrew Madsen](https://blog.andrewmadsen.com/)"
-
 feature_row_1:
   - image_path: /assets/images/cv/dave-delong.jpg
     title: "Dave DeLong"

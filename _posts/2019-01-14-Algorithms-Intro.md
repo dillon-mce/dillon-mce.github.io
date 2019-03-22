@@ -48,7 +48,7 @@ func simpleSearch<T: Equatable>(_ array: [T], for element: T) -> Int? {
 ```
 As you can see, it is much less code. Fewer places for errors. It just starts at the beginning and moves forward until it finds the element it is looking for. If it gets all the way through and doesn’t find it, it returns `nil`. It may be a better option, or at least it may not make a significant difference, if you know for certain that there will be a relatively small number of elements you are searching against.
 
-To test these functions (and illustrate how many steps they take) I made a little list and searched for an element on it using both sorts:
+To test these functions (and illustrate how many steps they take) I made a little list and searched for an element on it using both functions:
 ```swift
 var list: [Int] = []
 for i in stride(from: 1, to: 100, by: 2) {
@@ -58,7 +58,7 @@ for i in stride(from: 1, to: 100, by: 2) {
 binarySearch(list, for: 99)
 simpleSearch(list, for: 99)
 ```
-Then I added a couple helper variables in the and printed these results out to the console:
+Then I added in a couple of helper variables and printed these results out to the console:
 ```
 Binary search took 6 steps and completed in 3.898143768310547e-05 seconds.
 Simple search took 50 steps and completed in 7.200241088867188e-05 seconds.
