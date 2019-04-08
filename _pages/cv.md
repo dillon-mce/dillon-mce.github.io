@@ -28,17 +28,17 @@ I am basically just beginning my journey as a professional developer. Since Augu
 For the six years prior to that I was the technical director at a couple of different churches and I’ve been [a photographer on the side](http://light-and-lens.com) for the last few years. I’ve noticed that a lot of the skills I’ve picked up doing those things seem to be transferable to programming. You have to be able to read documentation. You have to be able to learn stuff for yourself. You have to figure out how to solve problems in creative (and sustainable, and repeatable)  ways. And you have to think about the user’s experience every step of the way. I’m looking forward to applying those skills to whatever job comes next!
 
 ## Previous Employers
-**[Lambda School](https://lambdaschool.com/) - Section Lead (iOS4 cohort) | 11/18 - 02/19**  
-Kept track of student attendance and reviewed student’s code daily. Came up with and presented code challenges. Presented guided projects for students who needed to repeat material.
+**[Lambda School](https://lambdaschool.com/) - iOS4 Class Lead | 11/18 - 02/19**  
+Lambda School is an online software development school offering tracks in full-stack web, iOS, or Android development as well as Data Science and UX Design. I tracked student attendance and reviewed student’s code daily. I also wrote and presented code challenges and presented guided projects for students who needed to repeat material.
 
 **[Rocky Mountain](https://rocky.church/) - Technical Director | 05/15 - 09/18**  
-Oversaw and maintained audio, video and lighting systems, and coordinated volunteers. Generally helped solve any non-IT technical problems.
+Rocky Mountain Christian Church is a community-focused church with around 2500 members and six services per week on two campuses. I oversaw audio, video and lighting systems, and managed regular live- streaming of sermons between campuses. I also coordinated volunteers and generally helped solve any non-IT technical problems.
 
 **[Connection Pointe](https://www.connectionpointe.org/) - Technical Director | 08/14 - 05/15**  
-Recruited/developed/coordinated volunteers. Various production and media-related tasks.
+Connection Pointe Christian Church is a large community based church with around 5000 members and five services per week. My main responsibility was recruiting, training and coordinating volunteers. I also had a variety of production and media-related responsibilities.
 
 **[Calvary Baptist](https://www.calvaryjomo.com/) - Technical Intern | 09/13 - 05/14**  
-Managed production of weekend services and oversaw audio, video and lighting systems. Produced weekly bulletin and maintained the website.
+Calvary Baptist Church is church with around 600 members and two services per week. I managed production of weekend services and oversaw audio, video and lighting systems. Produced weekly bulletin, managed social media accounts and maintained the website.
 
 ## What the pros are saying:
 
