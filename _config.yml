@@ -208,6 +208,7 @@ kramdown:
     wrap: true
     span:
       line_numbers: false
+      code_class: "my-class"
     block:
       line_numbers: true
 
