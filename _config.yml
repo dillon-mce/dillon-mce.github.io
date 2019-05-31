@@ -206,6 +206,7 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     wrap: true
+    default_lang: swift
     span:
       line_numbers: false
       code_class: "my-class"
