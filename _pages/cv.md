@@ -21,11 +21,66 @@ feature_row_3:
     title: "Andrew Madsen"
     alt: "Andrew Madsen"
     excerpt: "*\"He was one of my students\"*\n\n[blog.andrewmadsen.com](https://blog.andrewmadsen.com/)"
+
+gallery_1:
+  - url: /assets/images/cv/sleepsta-1.png
+    image_path: /assets/images/cv/sleepsta-1.png
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /assets/images/cv/sleepsta-2.png
+    image_path: /assets/images/cv/sleepsta-2.png
+    alt: "placeholder image 2"
+    title: "Image 2 title caption"
+  - url: /assets/images/cv/sleepsta-3.png
+    image_path: /assets/images/cv/sleepsta-3.png
+    alt: "placeholder image 3"
+    title: "Image 3 title caption"
+
+gallery_2:
+  - url: /assets/images/cv/risk-assessment-1.png
+    image_path: /assets/images/cv/risk-assessment-1.png
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /assets/images/cv/risk-assessment-2.png
+    image_path: /assets/images/cv/risk-assessment-2.png
+    alt: "placeholder image 2"
+    title: "Image 2 title caption"
+  - url: /assets/images/cv/risk-assessment-3.png
+    image_path: /assets/images/cv/risk-assessment-3.png
+    alt: "placeholder image 3"
+    title: "Image 3 title caption"
 ---
 
-I am basically just beginning my journey as a professional developer. Since August of 2018 I have been studying iOS Development at Lambda School, with a brief hiatus where I acted as the section lead of a later cohort for a few months. If you’d like to look at some code I’ve written recently, [check out my GitHub](https://github.com/dillon-mce).
+I recently left my comfortable career of managing the live production environment for churches to study in this crazy new iOS development program at Lambda School. I've spent basically all day every day for the last nine months reading and writing Swift and learning how to build iOS apps. A few numbers from my time in that program:
 
-For the six years prior to that I was the technical director at a couple of different churches and I’ve been [a photographer on the side](http://light-and-lens.com) for the last few years. I’ve noticed that a lot of the skills I’ve picked up doing those things seem to be transferable to programming. You have to be able to read documentation. You have to be able to learn stuff for yourself. You have to figure out how to solve problems in creative (and sustainable, and repeatable)  ways. And you have to think about the user’s experience every step of the way. I’m looking forward to applying those skills to whatever job comes next!
+**30** Weeks of material  
+**5** Days a week  
+**8** Hours a day  
+**659** GitHub contributions (since I started Lambda)  
+**100%** Pass rate of weekly challenges  
+**60** Completed afternoon projects  
+**3** Week-long individual projects
+
+I did well enough that after ten weeks they asked me to pause my studies for a little bit and act as the class lead for a new cohort fo students. So for ten weeks in the middle of my time at Lambda, I was the class lead for the iOS4 cohort, helping students who needed help, reviewing/debugging their code, and presenting code challenges.
+
+For the six years prior to starting Lambda I was the technical director at a couple of different churches, and I’ve been [a photographer on the side](http://light-and-lens.com) for the last few years. I’ve noticed that a lot of the skills I’ve picked up doing those things seem to be transferable to programming. You have to be able to read documentation. You have to be able to learn stuff for yourself. You have to figure out how to solve problems in creative (and sustainable, and repeatable)  ways. And you have to think about the user’s experience every step of the way. I’m looking forward to applying those skills to whatever job comes next!
+
+## Projects
+### Sleepsta
+![image-left](/assets/images/cv/sleepsta-icon.png){: .align-left}
+[Sleepsta](https://sleepsta.netlify.com/) is a sleep tracking/alarm app. The iOS app tracks your motion throughout the night to calculate a sleep quality and lets you view your daily stats on a graph. I built it as my capstone project at Lambda School, over the course of five weeks. I was the only iOS dev on a team with 5 web devs. You can test out the beta on [TestFlight](https://testflight.apple.com/join/miVTYutN), see [the code on GitHub](https://github.com/labs11-sleep-track/labs11-sleepTrack-iOS), or [read the blog posts I wrote about the experience](https://dillon-mce.com/tags/#labs).
+
+**Primary frameworks:**
+CoreMotion, UserNotifications, AVFoundation, MusicKit, Google Sign-In
+{% include gallery id="gallery_1" %}
+
+### Life Insurance Risk assessment
+![image-left](/assets/images/cv/risk-assessment-icon.png){: .align-left}
+For Lambda’s 2019 Winter Hackathon, I was a part of a team that built an app for life insurance agents over 30 hours. We built an app that drastically simplifies the tables that agents have to check against to see if a person qualifies for a particular plan. The main features are the "build checker", which lets you put in some basic information about a person, and get back a list of plans they aren't disqualified from, and a "medication checker", which lets you see if a certain medication disqualifies you from a given plan. You can see [the code on Github](https://github.com/dillon-mce/winter-hackathon-2019/tree/master/Risk%20Assessment), or [read the blog post I wrote about it]({% post_url 2019-01-08-Lambda-2019-Winter-Hackathon %}).
+
+**Primary frameworks:**
+CoreAnimation, UIKit
+{% include gallery id="gallery_2" %}
 
 ## Previous Employers
 **[Lambda School](https://lambdaschool.com/) - iOS4 Class Lead | 11/18 - 02/19**  
@@ -40,8 +95,9 @@ Connection Pointe Christian Church is a large community based church with around
 **[Calvary Baptist](https://www.calvaryjomo.com/) - Technical Intern | 09/13 - 05/14**  
 Calvary Baptist Church is church with around 600 members and two services per week. I managed production of weekend services and oversaw audio, video and lighting systems. Produced weekly bulletin, managed social media accounts and maintained the website.
 
-## What the pros are saying:
+## Education:
+**[Lambda School](https://lambdaschool.com/) - iOS Development | 08/18 - 06/19**  
+I studied iOS app development at Lambda, primarily with Swift and the main Cocoa frameworks, following a general MVC pattern. I also studied general Computer Science and got some exposure to Objective-C, Python, and C.
 
-{% include feature_row id="feature_row_1" type="left" %}
-{% include feature_row id="feature_row_2" type="right" %}
-{% include feature_row id="feature_row_3" type="left" %}
+**[Ozark Christian College](https://occ.edu/) - B.A. Christian Ministry | 08/09 - 05/14**  
+I primarily studied ancient Greek and Hebrew at Ozark, along with general psychology and counseling, philosophy and theology. I read tens of thousands of pages and wrote hundreds.
