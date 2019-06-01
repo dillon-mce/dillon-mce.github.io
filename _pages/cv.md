@@ -61,7 +61,7 @@ I recently left my comfortable career of managing the live production environmen
 **60** Completed afternoon projects  
 **3** Week-long individual projects
 
-I did well enough that after ten weeks they asked me to pause my studies for a little bit and act as the class lead for a new cohort fo students. So for ten weeks in the middle of my time at Lambda, I was the class lead for the iOS4 cohort, helping students who needed help, reviewing/debugging their code, and presenting code challenges.
+I did well enough that after ten weeks they asked me to pause my studies for a little bit and act as the class lead for a new cohort of students. So for ten weeks in the middle of my time at Lambda, I was the class lead for the iOS4 cohort, helping students who needed help, reviewing/debugging their code, and presenting code challenges.
 
 For the six years prior to starting Lambda I was the technical director at a couple of different churches, and I’ve been [a photographer on the side](http://light-and-lens.com) for the last few years. I’ve noticed that a lot of the skills I’ve picked up doing those things seem to be transferable to programming. You have to be able to read documentation. You have to be able to learn stuff for yourself. You have to figure out how to solve problems in creative (and sustainable, and repeatable)  ways. And you have to think about the user’s experience every step of the way. I’m looking forward to applying those skills to whatever job comes next!
 
@@ -76,7 +76,7 @@ CoreMotion, UserNotifications, AVFoundation, MusicKit, Google Sign-In
 
 ### Life Insurance Risk assessment
 ![image-left](/assets/images/cv/risk-assessment-icon.png){: .align-left}
-For Lambda’s 2019 Winter Hackathon, I was a part of a team that built an app for life insurance agents over 30 hours. We built an app that drastically simplifies the tables that agents have to check against to see if a person qualifies for a particular plan. The main features are the "build checker", which lets you put in some basic information about a person, and get back a list of plans they aren't disqualified from, and a "medication checker", which lets you see if a certain medication disqualifies you from a given plan. You can see [the code on Github](https://github.com/dillon-mce/winter-hackathon-2019/tree/master/Risk%20Assessment), or [read the blog post I wrote about it]({% post_url 2019-01-08-Lambda-2019-Winter-Hackathon %}).
+For Lambda’s 2019 Winter Hackathon, I was a part of a team that built an app for life insurance agents over 30 hours. We built an app that drastically simplifies the tables that agents have to check against to see if a person qualifies for a particular plan. There are two main features. The "build checker", which lets you put in some basic information about a person, and get back a list of plans they aren't disqualified from. And a "medication checker", which lets you see if a certain medication disqualifies you from a given plan. You can see [the code on Github](https://github.com/dillon-mce/winter-hackathon-2019/tree/master/Risk%20Assessment), or [read the blog post I wrote about it]({% post_url 2019-01-08-Lambda-2019-Winter-Hackathon %}).
 
 **Primary frameworks:**
 CoreAnimation, UIKit
