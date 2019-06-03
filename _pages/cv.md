@@ -53,9 +53,7 @@ gallery_2:
 
 I recently left my comfortable career of managing the live production environment for churches to study in this crazy new iOS development program at Lambda School. I've spent basically all day every day for the last nine months reading and writing Swift and learning how to build iOS apps. A few numbers from my time in that program:
 
-**30** Weeks of material  
-**5** Days a week  
-**8** Hours a day  
+**1200** Hours of course material  
 **659** GitHub contributions (since I started Lambda)  
 **100%** Pass rate of weekly challenges  
 **60** Completed afternoon projects  
