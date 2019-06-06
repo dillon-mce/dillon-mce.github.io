@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "Dillon McElhinney"
   avatar           : "/assets/images/bio-photo-dillon.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Currently studying iOS development at Lamba School"
+  bio              : "iOS Developer"
   location         : "Colorado"
   email            : "dillon.mce@gmail.com"
   links:
