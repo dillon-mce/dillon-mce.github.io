@@ -60,7 +60,7 @@ You can add it to other views and stack them, and use whatever colors you want. 
 
 // In viewDidLoad
 bottomView.setupGradient(startColor: .clear,
-                                 endColor: .white)
+                         endColor: .white)
 ```
 
 {% include figure image_path="/assets/images/snippets/2019-06-19-gradient-with-white.png" alt="Screenshots of gradient with white at the bottom."%}
