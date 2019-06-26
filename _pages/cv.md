@@ -57,11 +57,18 @@ I recently left my comfortable career of managing the live production environmen
 **659** GitHub contributions (since I started Lambda)  
 **100%** Pass rate of weekly challenges  
 **60** Completed afternoon projects  
-**3** Week-long individual projects
+**3** Week-long individual projects  
+**1** Five-Week-long capstone project
 
 I did well enough that after ten weeks they asked me to pause my studies for a little bit and act as the class lead for a new cohort of students. So for ten weeks in the middle of my time at Lambda, I was the class lead for the iOS4 cohort, helping students who needed help, reviewing/debugging their code, and presenting code challenges.
 
 For the six years prior to starting Lambda I was the technical director at a couple of different churches, and I’ve been [a photographer on the side](http://light-and-lens.com) for the last few years. I’ve noticed that a lot of the skills I’ve picked up doing those things seem to be transferable to programming. You have to be able to read documentation. You have to be able to learn stuff for yourself. You have to figure out how to solve problems in creative (and sustainable, and repeatable)  ways. And you have to think about the user’s experience every step of the way. I’m looking forward to applying those skills to whatever job comes next!
+
+-----
+*...Dillon has a clear attention to detail, which is a trait that is very hard to find (or train). He thinks through problems patiently, has a knack for noticing edge cases, and also seems like an amiable and friendly person to work with. He was able to answer every theoretical question and solve every problem I asked him to solve without any issue. He has a good grasp around basic data structures...*  
+{: .text-center}
+– Antonio Tari, [Skilled Interview](https://www.skilledinc.com/report-card/2103)
+{: .text-right}
 
 ## Projects
 ### Sleepsta
