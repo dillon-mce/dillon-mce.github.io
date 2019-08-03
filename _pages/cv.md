@@ -92,7 +92,7 @@ CoreAnimation, UIKit
 {% include gallery id="gallery_2" %}
 
 ## Previous Employers
-**[Madwire](https://www.madwire.com/) – Mobile Software Engineer | 07/19 - Present**
+**[Madwire](https://www.madwire.com/) – Mobile Software Engineer | 07/19 - Present**  
 Madwire is a Marketing and Design company (i.e. M-A-D) that offers a whole suite of digital marketing software and professional marketing services through a platform called Marketing 360. I work on the mobile version of their Yelp-like product called [Top Rated Local](https://apps.apple.com/us/app/top-rated-local/id1270356201?uo=4) fixing bugs and adding features through test driven development with the VIPER pattern.
 
 **[Lambda School](https://lambdaschool.com/) - iOS4 Class Lead | 11/18 - 02/19**  
