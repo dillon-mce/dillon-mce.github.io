@@ -4,51 +4,47 @@ permalink: /cv/
 author_profile: true
 title: "Curriculum Vitae"
 
-feature_row_1:
-  - image_path: /assets/images/cv/dave-delong.jpg
-    title: "Dave DeLong"
-    alt: "Dave DeLong"
-    excerpt: "*\"He's a real developer\"*\n\n[davedelong.com](https://davedelong.com/)"
-
-feature_row_2:
-  - image_path: /assets/images/cv/erica-sadun.png
-    title: "Erica Sadun"
-    alt: "Erica Sadun"
-    excerpt: "*\"I think he knows Swift\"*\n\n[ericasadun.com](https://ericasadun.com/)"
-
-feature_row_3:
-  - image_path: /assets/images/cv/andrew-madsen.jpg
-    title: "Andrew Madsen"
-    alt: "Andrew Madsen"
-    excerpt: "*\"He was one of my students\"*\n\n[blog.andrewmadsen.com](https://blog.andrewmadsen.com/)"
-
 gallery_1:
   - url: /assets/images/cv/sleepsta-1.png
     image_path: /assets/images/cv/sleepsta-1.png
-    alt: "placeholder image 1"
-    title: "Image 1 title caption"
+    alt: "Alarm setup screen in Sleepsta"
+    title: "Alarm setup screen in Sleepsta"
   - url: /assets/images/cv/sleepsta-2.png
     image_path: /assets/images/cv/sleepsta-2.png
-    alt: "placeholder image 2"
-    title: "Image 2 title caption"
+    alt: "Reminder/Volume Setting Screen in Sleepsta"
+    title: "Reminder/Volume Setting Screen in Sleepsta"
   - url: /assets/images/cv/sleepsta-3.png
     image_path: /assets/images/cv/sleepsta-3.png
-    alt: "placeholder image 3"
-    title: "Image 3 title caption"
+    alt: "Stats Screen in Sleepsta"
+    title: "Stats Screen in Sleepsta"
 
 gallery_2:
   - url: /assets/images/cv/risk-assessment-1.png
     image_path: /assets/images/cv/risk-assessment-1.png
-    alt: "placeholder image 1"
-    title: "Image 1 title caption"
+    alt: "Build Checker screen in Risk Assessment"
+    title: "Build Checker screen in Risk Assessment"
   - url: /assets/images/cv/risk-assessment-2.png
     image_path: /assets/images/cv/risk-assessment-2.png
-    alt: "placeholder image 2"
-    title: "Image 2 title caption"
+    alt: "Qualifying products results in Risk Assessment"
+    title: "Qualifying products results in Risk Assessment"
   - url: /assets/images/cv/risk-assessment-3.png
     image_path: /assets/images/cv/risk-assessment-3.png
-    alt: "placeholder image 3"
-    title: "Image 3 title caption"
+    alt: "Medication Checker screen in Risk Assessment"
+    title: "Medication Checker screen in Risk Assessment"
+
+gallery_3:
+  - url: /assets/images/cv/study-swipe-1.png
+    image_path: /assets/images/cv/study-swipe-1.png
+    alt: "Review screen in StudySwipe"
+    title: "Review screen in StudySwipe"
+  - url: /assets/images/cv/study-swipe-2.png
+    image_path: /assets/images/cv/study-swipe-2.png
+    alt: "Test taking screen in StudySwipe"
+    title: "Test taking screen in StudySwipe"
+  - url: /assets/images/cv/study-swipe-3.png
+    image_path: /assets/images/cv/study-swipe-3.png
+    alt: "Progress tracking screen in StudySwipe"
+    title: "Progress tracking screen in StudySwipe"
 ---
 
 I recently left my comfortable career of managing the live production environment for churches to study in this crazy new iOS development program at Lambda School. I've spent basically all day every day for the last nine months reading and writing Swift and learning how to build iOS apps. A few numbers from my time in that program:
@@ -71,6 +67,13 @@ For the six years prior to starting Lambda I was the technical director at a cou
 {: .text-right}
 
 ## Projects
+### StudySwipe
+[StudySwipe](https://apps.apple.com/us/app/studyswipe/id1470980976) is a flash-card style app that [Ben Hakes](https://twitter.com/benhakes) and I built as a part of Lambda's 2019 Summer Hackathon. We wanted an app that would help us prepare for technical interviews, which we were both in the middle of going through at the time. We built the bulk of the functionality in the 48 hour period of the hackathon and we ended up winning "Best Native App". We have since continued to work on it in our spare time and recently released it on the App Store. It currently contains about 150 questions that are relevant for iOS Development-related technical interviews, but we hope to expand to other subjects soon.
+
+**Primary Frameworks**
+CoreAnimation, CoreData, Programmatic UI, Down (for markdown rendering), Vapor (soon)
+{% include gallery id="gallery_3" %}
+
 ### Sleepsta
 ![image-left](/assets/images/cv/sleepsta-icon.png){: .align-left}
 [Sleepsta](https://sleepsta.netlify.com/) is a sleep tracking/alarm app. The iOS app tracks your motion throughout the night to calculate a sleep quality and lets you view your daily stats on a graph. I built it as my capstone project at Lambda School, over the course of five weeks. I was the only iOS dev on a team with 5 web devs. You can test out the beta on [TestFlight](https://testflight.apple.com/join/miVTYutN), see [the code on GitHub](https://github.com/labs11-sleep-track/labs11-sleepTrack-iOS), or [read the blog posts I wrote about the experience](https://dillon-mce.com/tags/#labs).
@@ -88,6 +91,9 @@ CoreAnimation, UIKit
 {% include gallery id="gallery_2" %}
 
 ## Previous Employers
+**[Madwire](https://www.madwire.com/) – Mobile Software Engineer | 07/19 - Present**
+Madwire is a Marketing and Design company (i.e. M-A-D) that offers a whole suite of digital marketing software and professional marketing services through a platform called Marketing 360. I work on the mobile version of their Yelp-like product called [Top Rated Local](https://apps.apple.com/us/app/top-rated-local/id1270356201?uo=4) fixing bugs and adding features through test driven development with the VIPER pattern.
+
 **[Lambda School](https://lambdaschool.com/) - iOS4 Class Lead | 11/18 - 02/19**  
 Lambda School is an online software development school offering tracks in full-stack web, iOS, or Android development as well as Data Science and UX Design. I tracked student attendance and reviewed student’s code daily. I also wrote and presented code challenges and presented guided projects for students who needed to repeat material.
 
@@ -96,9 +102,6 @@ Rocky Mountain Christian Church is a community-focused church with around 2500 m
 
 **[Connection Pointe](https://www.connectionpointe.org/) - Technical Director | 08/14 - 05/15**  
 Connection Pointe Christian Church is a large community based church with around 5000 members and five services per week. My main responsibility was recruiting, training and coordinating volunteers. I also had a variety of production and media-related responsibilities.
-
-**[Calvary Baptist](https://www.calvaryjomo.com/) - Technical Intern | 09/13 - 05/14**  
-Calvary Baptist Church is church with around 600 members and two services per week. I managed production of weekend services and oversaw audio, video and lighting systems. Produced weekly bulletin, managed social media accounts and maintained the website.
 
 ## Education:
 **[Lambda School](https://lambdaschool.com/) - iOS Development | 08/18 - 06/19**  
