@@ -71,7 +71,7 @@ For the six years prior to starting Lambda I was the technical director at a cou
 ![image-left](/assets/images/cv/study-swipe-icon.png){: .align-left}
 [StudySwipe](https://apps.apple.com/us/app/studyswipe/id1470980976) is a flash-card style app that [Ben Hakes](https://twitter.com/benhakes) and I built as a part of Lambda's 2019 Summer Hackathon. We wanted an app that would help us prepare for technical interviews, which we were both in the middle of going through at the time. We built the bulk of the functionality in the 48 hour period of the hackathon and we ended up winning "Best Native App". We have since continued to work on it in our spare time and recently released it on the App Store. It currently contains about 150 questions that are relevant for iOS Development-related technical interviews, but we hope to expand to other subjects soon.
 
-**Primary Frameworks**
+**Primary Frameworks:**
 CoreAnimation, CoreData, Programmatic UI, Down (for markdown rendering), Vapor (soon)
 {% include gallery id="gallery_3" %}
 
