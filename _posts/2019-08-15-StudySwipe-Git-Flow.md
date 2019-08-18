@@ -88,6 +88,6 @@ git pull
 ```
 Once the latest stable version is merged into `master` and on the local machine, build and run the project in Xcode. Verify that it’s working and what not. Then, finally, archive it and push to the store.
 
-I don't know that it is the best flow to follow but it seems to be working for us right now. A some point we may look into some sort of CICD that would build the archive and push it to the store for us when we merge into development, but that is quite a bit of overhead for a side project, especially because right now we're not even doing any testing. When/if we get there, [CircleCI](https://circleci.com/) seems like a really solid option. They have great documentation and they will even give you some free time on a machine if your project is open source.
+I don't know that it is the best flow to follow but it seems to be working for us right now. At some point we may look into some sort of CICD that would build the archive and push it to the store for us when we merge into development, but that is quite a bit of overhead for a side project, especially because right now we're not even doing any testing. When/if we get there, [CircleCI](https://circleci.com/) seems like a really solid option. They have great documentation and they will even give you some free time on a machine if your project is open source.
 
-Let me know if you have a better Git workflow, or suggestions on how to improve this one, or suggests on CICD products or whatever.
+Let me know if you have a better Git workflow, or suggestions on how to improve this one, or suggestions on CICD products or whatever.
