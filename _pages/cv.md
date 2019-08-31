@@ -47,7 +47,7 @@ gallery_3:
     title: "Progress tracking screen in StudySwipe"
 ---
 
-I recently left my comfortable career of managing the live production environment for churches to study in this crazy new iOS development program at Lambda School. I've spent basically all day every day for the last nine months reading and writing Swift and learning how to build iOS apps. A few numbers from my time in that program:
+About a year ago I left my comfortable career of managing the live production environment for churches to study in this crazy new iOS development program at [Lambda School][lambda]. I spent basically all day every day for nine months reading and writing Swift and learning how to build iOS apps. A few numbers from my time in that program:
 
 **1200** Hours of course material  
 **659** GitHub contributions (since I started Lambda)  
@@ -58,7 +58,9 @@ I recently left my comfortable career of managing the live production environmen
 
 I did well enough that after ten weeks they asked me to pause my studies for a little bit and act as the class lead for a new cohort of students. So for ten weeks in the middle of my time at Lambda, I was the class lead for the iOS4 cohort, helping students who needed help, reviewing/debugging their code, and presenting code challenges.
 
-For the six years prior to starting Lambda I was the technical director at a couple of different churches, and I’ve been [a photographer on the side](http://light-and-lens.com) for the last few years. I’ve noticed that a lot of the skills I’ve picked up doing those things seem to be transferable to programming. You have to be able to read documentation. You have to be able to learn stuff for yourself. You have to figure out how to solve problems in creative (and sustainable, and repeatable)  ways. And you have to think about the user’s experience every step of the way. I’m looking forward to applying those skills to whatever job comes next!
+Ten days after finishing that course, I started a job at [Madwire][madwire] working on their [Top Rated Local][trl] app. We use a modified version of the [VIPER architecture][clean-swift], shoot for 100% code coverage with our unit tests and generate all our UI programmatically so I’ve gotten a crash course in all three of those things since starting there.
+
+For the six years prior to starting Lambda I was the technical director at a couple of different churches, and I’ve been [a photographer on the side](http://light-and-lens.com) for the last few years. I’ve noticed that a lot of the skills I’ve picked up doing those things seem to be transferable to programming. You have to be able to read documentation. You have to be able to learn stuff for yourself. You have to figure out how to solve problems in creative (and sustainable, and repeatable)  ways. And you have to think about the user’s experience every step of the way. I’m looking forward to applying those skills to whatever comes next!
 
 -----
 *...Dillon has a clear attention to detail, which is a trait that is very hard to find (or train). He thinks through problems patiently, has a knack for noticing edge cases, and also seems like an amiable and friendly person to work with. He was able to answer every theoretical question and solve every problem I asked him to solve without any issue. He has a good grasp around basic data structures...*  
@@ -92,10 +94,10 @@ CoreAnimation, UIKit
 {% include gallery id="gallery_2" %}
 
 ## Previous Employers
-**[Madwire](https://www.madwire.com/) – Mobile Software Engineer | 07/19 - Present**  
-Madwire is a Marketing and Design company (i.e. M-A-D) that offers a whole suite of digital marketing software and professional marketing services through a platform called Marketing 360. I work on the mobile version of their Yelp-like product called [Top Rated Local](https://apps.apple.com/us/app/top-rated-local/id1270356201?uo=4) fixing bugs and adding features through test driven development with the VIPER pattern.
+**[Madwire][madwire] – Mobile Software Engineer | 07/19 - Present**  
+Madwire is a Marketing and Design company (i.e. M-A-D) that offers a whole suite of digital marketing software and professional marketing services through a platform called Marketing 360. I work on the mobile version of their Yelp-like product called [Top Rated Local][trl] fixing bugs and adding features through test driven development with the VIPER pattern.
 
-**[Lambda School](https://lambdaschool.com/) - iOS4 Class Lead | 11/18 - 02/19**  
+**[Lambda School][lambda] - iOS4 Class Lead | 11/18 - 02/19**  
 Lambda School is an online software development school offering tracks in full-stack web, iOS, or Android development as well as Data Science and UX Design. I tracked student attendance and reviewed student’s code daily. I also wrote and presented code challenges and presented guided projects for students who needed to repeat material.
 
 **[Rocky Mountain](https://rocky.church/) - Technical Director | 05/15 - 09/18**  
@@ -105,8 +107,13 @@ Rocky Mountain Christian Church is a community-focused church with around 2500 m
 Connection Pointe Christian Church is a large community based church with around 5000 members and five services per week. My main responsibility was recruiting, training and coordinating volunteers. I also had a variety of production and media-related responsibilities.
 
 ## Education:
-**[Lambda School](https://lambdaschool.com/) - iOS Development | 08/18 - 06/19**  
+**[Lambda School][lambda] - iOS Development | 08/18 - 06/19**  
 I studied iOS app development at Lambda, primarily with Swift and the main Cocoa frameworks, following a general MVC pattern. I also studied general Computer Science and got some exposure to Objective-C, Python, and C.
 
 **[Ozark Christian College](https://occ.edu/) - B.A. Christian Ministry | 08/09 - 05/14**  
 I primarily studied ancient Greek and Hebrew at Ozark, along with general psychology and counseling, philosophy and theology. I read tens of thousands of pages and wrote hundreds.
+
+[madwire]: https://www.madwire.com/
+[lambda]: https://lambdaschool.com/
+[clean-swift]: https://clean-swift.com/
+[trl]: https://apps.apple.com/us/app/top-rated-local/id1270356201?uo=4
