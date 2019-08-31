@@ -1,6 +1,6 @@
 ---
 title: "StudySwipe Git Workflow"
-tags: git
+tags: git studyswipe
 ---
 
 I wrote this up in an answer on a Slack thread, so I figured I'd take a minute to polish it up a little and post it here so I can reference it in the future. This is the Git workflow that [Ben](https://twitter.com/benhakes) and I follow for our project [StudySwipe](https://apps.apple.com/us/app/studyswipe/id1470980976):
