@@ -18,7 +18,6 @@ This is just a list of some good resources I've come across in my time trying to
 - [CoderByte](https://www.coderbyte.com/)
 - [Grokking Algorithms](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230) - Easy to read book on algorithms
 
-
 ### iOS (and MacOS) Specific Resources
 - [The Swift Programming Language Guide](https://itunes.apple.com/us/book/the-swift-programming-language-swift-4-2/id881256329?mt=11) (**Read this!** Really. Download it on your phone and read one section every day while you're eating breakfast instead of scrolling through Twitter or Instagram or whatever. It'll take 15 minutes and you'll be amazed at how much you pick up.)
 - [Swift.org](http://swift.org/) - Especially the [forums](https://forums.swift.org/)
@@ -29,3 +28,7 @@ This is just a list of some good resources I've come across in my time trying to
 - [Awesome Swift](https://github.com/matteocrippa/awesome-swift) - list of libraries and resources
 - [NSHipster](https://nshipster.com/)
 - [App Development with Swift](https://itunes.apple.com/us/book/app-development-with-swift/id1219117996?mt=11) - Good introduction to developing iOS apps
+
+### Other Stuff I've Found Helpful
+- [Productivity and Sleep](https://www.tuck.com/productivity-and-sleep/)
+- [Why You Should Take Naps](https://www.tuck.com/napping/)
