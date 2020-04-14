@@ -47,15 +47,15 @@ gallery_3:
     title: "Progress tracking screen in StudySwipe"
 ---
 
-About a year and a half ago I left my comfortable career of managing the live production environment for churches to study in this crazy new iOS development program at [Lambda School][lambda]. I spent basically all day every day for nine months reading and writing Swift and learning how to build iOS apps.
+About two years ago I left my comfortable career of managing the live production environment for churches to study in this crazy new iOS development program at [Lambda School][lambda]. I spent basically all day every day for nine months reading and writing Swift and learning how to build iOS apps.
 
 I did well enough that after ten weeks they asked me to pause my studies for a little bit and act as the class lead for a new cohort of students. So for ten weeks in the middle of my time at Lambda, I was the class lead for the iOS4 cohort, helping students who needed help, reviewing/debugging their code, and presenting code challenges.
 
 Ten days after finishing that course, I started a job at [Madwire][madwire] working on their [Top Rated Local][trl] app. We used a modified version of the [VIPER architecture][clean-swift], shot for 100% code coverage with our unit tests and generated all our UI programmatically so I got a crash course in all three of those things there.
 
-I recently accepted a new position at [Ibotta][ibotta], working on their [iOS app][ibotta-app] as a part of the Radicial Simplification team. Our goal is to reduce friction as much as possible for the users of the app by showing them (only) content they care about and removing unnecessary roadblocks in the process of earning rewards.
+Most recently, I accepted position at [Ibotta][ibotta], working on their [iOS app][ibotta-app] as a part of the Radicial Simplification team. Our goal is to reduce friction as much as possible for the users of the app by showing them (only) content they care about and removing unnecessary roadblocks in the process of earning rewards.
 
-For the six years prior to starting Lambda I was the technical director at a couple of different churches, and I’ve been [a photographer on the side](http://light-and-lens.com) for the last few years. I’ve noticed that a lot of the skills I’ve picked up doing those things seem to be transferable to programming. You have to be able to read documentation. You have to be able to learn stuff for yourself. You have to figure out how to solve problems in creative (and sustainable, and repeatable)  ways. And you have to think about the user’s experience every step of the way. I’m looking forward to applying those skills to whatever comes next!
+For the six years prior to starting Lambda I was a technical director at a couple of different churches, and I’ve been [a photographer on the side](http://light-and-lens.com) for the last few years. I’ve noticed that a lot of the skills I picked up doing those things transfer pretty well to programming. You have to be able to read documentation. You have to be able to learn stuff for yourself. You have to figure out how to solve problems in creative (and sustainable, and repeatable)  ways. And you have to think about the user’s experience every step of the way. I enjoy applying those skills to the work I do now, and I'm sure they'll serve me well for whatever comes next!
 
 -----
 *...Dillon has a clear attention to detail, which is a trait that is very hard to find (or train). He thinks through problems patiently, has a knack for noticing edge cases, and also seems like an amiable and friendly person to work with. He was able to answer every theoretical question and solve every problem I asked him to solve without any issue…*  
@@ -74,7 +74,7 @@ CoreAnimation, CoreData, Programmatic UI, Down (for markdown rendering), Vapor (
 
 ### Sleepsta
 ![image-left](/assets/images/cv/sleepsta-icon.png){: .align-left}
-[Sleepsta](https://sleepsta.netlify.com/) is a sleep tracking/alarm app. The iOS app tracks your motion throughout the night to calculate a sleep quality and lets you view your daily stats on a graph. I built it as my capstone project at Lambda School, over the course of five weeks. I was the only iOS dev on a team with 5 web devs. You can test out the beta on [TestFlight](https://testflight.apple.com/join/miVTYutN), see [the code on GitHub](https://github.com/labs11-sleep-track/labs11-sleepTrack-iOS), or [read the blog posts I wrote about the experience](https://dillon-mce.com/tags/#labs).
+[Sleepsta](https://sleepsta.netlify.com/) is a sleep tracking/alarm app. The iOS app tracks your motion throughout the night to calculate a sleep quality and lets you view your daily stats on a graph. I built it as my capstone project at Lambda School, over the course of five weeks. I was the only iOS dev on a team with 5 web devs. You can see [the code on GitHub](https://github.com/labs11-sleep-track/labs11-sleepTrack-iOS), or [read the blog posts I wrote about the experience](https://dillon-mce.com/tags/#labs).
 
 **Primary frameworks:**
 CoreMotion, UserNotifications, AVFoundation, MusicKit, Google Sign-In
@@ -96,7 +96,7 @@ Ibotta is a Denver based mobile technology company that strives to "make every p
 Madwire is a Marketing and Design company (i.e. M-A-D) that offers a whole suite of digital marketing software and professional marketing services through a platform called Marketing 360. I work on the mobile version of their Yelp-like product called [Top Rated Local][trl] fixing bugs and adding features through test driven development with the VIPER pattern.
 
 **[Lambda School][lambda] - iOS4 Class Lead | 11/18 - 02/19**  
-Lambda School is an online software development school offering tracks in full-stack web, iOS, or Android development as well as Data Science and UX Design. I tracked student attendance and reviewed student’s code daily. I also wrote and presented code challenges and presented guided projects for students who needed to repeat material.
+Lambda School is an online software development school offering tracks in full-stack web, iOS, or Android development as well as Data Science and UX Design. I tracked student attendance and reviewed students' code daily. I also wrote and presented code challenges and presented guided projects for students who needed to repeat material.
 
 **[Rocky Mountain](https://rocky.church/) - Technical Director | 05/15 - 09/18**  
 Rocky Mountain Christian Church is a community-focused church with around 2500 members and six services per week on two campuses. I oversaw audio, video and lighting systems, and managed regular live- streaming of sermons between campuses. I also coordinated volunteers and generally helped solve any non-IT technical problems.
