@@ -6,4 +6,6 @@ gem "minimal-mistakes-jekyll"
 
 gem 'jekyll-include-cache'
 
-gem "nokogiri", ">= 1.10.4"
+gem "nokogiri", ">= 1.10.8"
+
+gem "rubyzip", ">= 1.3.0" # added because Github complained about securty
