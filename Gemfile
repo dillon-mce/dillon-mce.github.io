@@ -8,4 +8,6 @@ gem 'jekyll-include-cache'
 
 gem "nokogiri", ">= 1.10.8"
 
-gem "rubyzip", ">= 1.3.0" # added because Github complained about securty
+gem "rubyzip", ">= 1.3.0" # added because Github complained about security
+
+gem "kramdown", ">= 2.3.0" # added because Github complained about security
