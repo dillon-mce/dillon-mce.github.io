@@ -28,7 +28,3 @@ This is just a list of some good resources I've come across in my time trying to
 - [Awesome Swift](https://github.com/matteocrippa/awesome-swift) - list of libraries and resources
 - [NSHipster](https://nshipster.com/)
 - [App Development with Swift](https://itunes.apple.com/us/book/app-development-with-swift/id1219117996?mt=11) - Good introduction to developing iOS apps
-
-### Other Stuff I've Found Helpful
-- [Productivity and Sleep](https://www.tuck.com/productivity-and-sleep/)
-- [Why You Should Take Naps](https://www.tuck.com/napping/)
