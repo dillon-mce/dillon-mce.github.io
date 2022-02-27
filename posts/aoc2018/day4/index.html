@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="og:site_name" content="Dev with Dillon"/><link rel="canonical" href="https://dillon-mce.com/posts/aoc2018/day4"/><meta name="twitter:url" content="https://dillon-mce.com/posts/aoc2018/day4"/><meta name="og:url" content="https://dillon-mce.com/posts/aoc2018/day4"/><title>Advent of Code 2018 - Day 4 | Dev with Dillon</title><meta name="twitter:title" content="Advent of Code 2018 - Day 4 | Dev with Dillon"/><meta name="og:title" content="Advent of Code 2018 - Day 4 | Dev with Dillon"/><meta name="description" content="My understanding of Day 4’s first problem is this: given a string like the one below, return an Int that is the minute at which the guard who spent the most total minutes asleep was asleep the most, times that guard’s ID number."/><meta name="twitter:description" content="My understanding of Day 4’s first problem is this: given a string like the one below, return an Int that is the minute at which the guard who spent the most total minutes asleep was asleep the most, times that guard’s ID number."/><meta name="og:description" content="My understanding of Day 4’s first problem is this: given a string like the one below, return an Int that is the minute at which the guard who spent the most total minutes asleep was asleep the most, times that guard’s ID number."/><meta name="twitter:card" content="summary"/><link rel="stylesheet" href="/styles.css" type="text/css"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/images/favicon.png" type="image/png"/><link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to Dev with Dillon"/></head><body class="item-page"><header><div class="wrapper"><div class="inner-header"><a href="/" class="logo"><img src="/images/logo.png" alt="Dillon's memoji" class="logo-image"/>Dev with Dillon</a><nav><ul><li><a href="/posts" class="selected">Blog</a></li><li><a href="/resume">CV</a></li></ul></nav></div></div></header><div class="wrapper"><article><h1>Advent of Code 2018 - Day 4</h1><p class="read-time">9 minute read</p><div class="content"><h2><a href="https://adventofcode.com/2018/day/4">Problem 1</a></h2><p>My understanding of Day 4’s first problem is this: given a string like the one below, return an Int that is the minute at which the guard who spent the most total minutes asleep was asleep the most, times that guard’s ID number. The sample data returns <code>240</code>. Sample data:</p><pre><code>[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">01 00</span>:<span class="number">00</span>] <span class="type">Guard</span> #10 begins shift
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">01 00</span>:<span class="number">05</span>] falls asleep
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">01 00</span>:<span class="number">25</span>] wakes up
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">01 00</span>:<span class="number">30</span>] falls asleep
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">01 00</span>:<span class="number">55</span>] wakes up
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">01 23</span>:<span class="number">58</span>] <span class="type">Guard</span> #99 begins shift
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">02 00</span>:<span class="number">40</span>] falls asleep
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">02 00</span>:<span class="number">50</span>] wakes up
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">03 00</span>:<span class="number">05</span>] <span class="type">Guard</span> #10 begins shift
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">03 00</span>:<span class="number">24</span>] falls asleep
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">03 00</span>:<span class="number">29</span>] wakes up
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">04 00</span>:<span class="number">02</span>] <span class="type">Guard</span> #99 begins shift
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">04 00</span>:<span class="number">36</span>] falls asleep
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">04 00</span>:<span class="number">46</span>] wakes up
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">05 00</span>:<span class="number">03</span>] <span class="type">Guard</span> #99 begins shift
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">05 00</span>:<span class="number">45</span>] falls asleep
+[<span class="number">1518</span>-<span class="number">11</span>-<span class="number">05 00</span>:<span class="number">55</span>] wakes up
+</code></pre><h3>Method</h3><p>My method for solving this problem looks like this: - Parse the data into a dictionary with the Guard’s IDs as the key, and an array of the dates that they are asleep and awake as the value. - Count up all the minutes each guard is asleep in a dictionary with their ID as the key and an Int of the count of minutes as the value. - Once I find the guard who is asleep for the most minutes, need to figure out which minute they were asleep the most at.	- Make a dictionary of the minute as the key and an Int of the number of times the guard was asleep at that minute as the value.	- Loop through each minute, see if the date range contains that minute and add 1 to the associated key in the dictionary - Return the minute with the largest value times the guard’s ID</p><h3>Implementation</h3><p>My function for parsing the input into a dictionary of guard ID’s and arrays of dates looks like this:</p><pre><code><span class="keyword">func</span> parseInput(<span class="keyword">_</span> string: <span class="type">String</span>) -&gt; [<span class="type">String</span>: [<span class="type">Date</span>]] {
+    <span class="keyword">let</span> inputData = string.<span class="call">components</span>(separatedBy: .<span class="dotAccess">newlines</span>).<span class="call">sorted</span>()
+    <span class="keyword">let</span> dateFormatter = <span class="type">DateFormatter</span>()
+    dateFormatter.<span class="property">dateFormat</span> = <span class="string">"yyyy-MM-dd HH:mm"</span>
+    <span class="keyword">var</span> currentGuard = <span class="string">""</span>
+    <span class="keyword">var</span> timestampDict: [<span class="type">String</span>: [<span class="type">Date</span>]] = [:]
+
+    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="number">0</span>..&lt;inputData.<span class="property">count</span> {
+        <span class="keyword">let</span> components = inputData[i].<span class="call">components</span>(separatedBy: <span class="type">CharacterSet</span>(charactersIn: <span class="string">"[]"</span>))
+        <span class="keyword">if</span> components[<span class="number">2</span>].<span class="call">hasPrefix</span>(<span class="string">" Guard"</span>) {
+            <span class="keyword">let</span> num = components[<span class="number">2</span>].<span class="call">components</span>(separatedBy: .<span class="dotAccess">whitespaces</span>)[<span class="number">2</span>]
+            currentGuard = num
+            <span class="keyword">continue</span>
+        }
+
+        <span class="keyword">guard let</span> date = dateFormatter.<span class="call">date</span>(from: components[<span class="number">1</span>]) <span class="keyword">else</span> { <span class="keyword">continue</span> }
+
+        timestampDict[currentGuard, default: []].<span class="call">append</span>(date)
+    }
+
+    <span class="keyword">return</span> timestampDict
+}
+</code></pre><p>I split the input data into an array separated by newlines, and I sort it because the input was not in chronological order. At first I was worried that I would have to write some logic to get it to sort correctly, but it worked out of the box because of the format of the dates in the input string. I make a <code>dateFormatter</code> whose date format matches that of the data, a <code>currentGuard</code> variable to hold the guard I’m currently working with, and a <code>timestampDict</code> variable to hold the parsed data.</p><p>Because each guard has a line that says when they begin their shift, followed by alternating lines saying when they fell asleep and when they woke back up, and because every guard starts their shift awake and always wakes back up for every time they fall asleep, all I need is the dates following the line that says which guard started their shift. I know that the even-indexed elements of the array will all be “falling asleep” dates and all the odd-indexed elements will be “waking up” dates. This becomes relevant later.</p><p>So I split each line on the bracket characters and if the line starts with <code>"Guard"</code>, then I know it is the beginning of a new shift, so I just set <code>currentGuard</code> to that guard’s ID number and continue. For each subsequent line until I hit another that starts with “Guard” I pull out just the date and append it to the array associated with the current Guard’s ID. And at the end I return the dictionary.</p><p>My function for counting the minutes each guard was asleep looks like this:</p><pre><code><span class="keyword">func</span> countMinutesAsleep(<span class="keyword">_</span> guardDict: [<span class="type">String</span>: [<span class="type">Date</span>]]) -&gt; [<span class="type">String</span>: <span class="type">Int</span>] {
+    <span class="keyword">var</span> sleepCount: [<span class="type">String</span>: <span class="type">Int</span>] = [:]
+    <span class="keyword">for</span> (key, value) <span class="keyword">in</span> guardDict {
+        <span class="keyword">for</span> index <span class="keyword">in</span> <span class="number">0</span>..&lt;value.<span class="property">count</span>-<span class="number">1</span> {
+            <span class="keyword">if</span> index % <span class="number">2</span> == <span class="number">0</span> {
+                <span class="keyword">let</span> interval = <span class="type">DateInterval</span>(start: value[index], end: value[index+<span class="number">1</span>])
+                <span class="keyword">let</span> minutes = <span class="type">Int</span>(interval.<span class="property">duration</span>/<span class="number">60</span>)
+                sleepCount[key, default: <span class="number">0</span>] += minutes
+            }
+        }
+    }
+    <span class="keyword">return</span> sleepCount
+}
+</code></pre><p>I start by making a dictionary to hold the guard IDs and the number of minutes they’ve been asleep. Then I loop through all the keys and values in the dictionary. Inside of that I loop through each index in 0 up to 1 less that the value’s count. The value here being the array of dates associated with that guard. I only check the even-indexed elements, because those are the falling asleep dates. I make a DateInterval starting at the falling asleep date and ending at the waking up date. Then I get an Int of the interval property from that. The interval property value is in seconds, so I divide that by 60 to get the minute value. Finally I add that to the value for the dictionary at the current key. Once I’m out of both loops, I return the dictionary.</p><p>My function for counting the times a particular guard was a sleep at each minute looks like this:</p><pre><code><span class="keyword">func</span> countTimesAsleepAtMinute(<span class="keyword">_</span> dates: [<span class="type">Date</span>]) -&gt; [<span class="type">Int</span>: <span class="type">Int</span>] {
+    <span class="keyword">let</span> minuteFormatter = <span class="type">DateFormatter</span>()
+    minuteFormatter.<span class="property">dateFormat</span> = <span class="string">"mm"</span>
+
+    <span class="keyword">var</span> minuteDict: [<span class="type">Int</span>: <span class="type">Int</span>] = [:]
+    <span class="keyword">for</span> minute <span class="keyword">in</span> <span class="number">0</span>..&lt;<span class="number">60</span> {
+        <span class="keyword">for</span> index <span class="keyword">in</span> <span class="number">0</span>..&lt;dates.<span class="property">count</span>-<span class="number">1</span> {
+            <span class="keyword">if</span> index % <span class="number">2</span> == <span class="number">0</span> {
+                <span class="keyword">guard let</span> fallAsleep = <span class="type">Int</span>(minuteFormatter.<span class="call">string</span>(from: dates[index])),
+                    <span class="keyword">let</span> wakeUp = <span class="type">Int</span>(minuteFormatter.<span class="call">string</span>(from: dates[index+<span class="number">1</span>])) <span class="keyword">else</span> { <span class="keyword">continue</span> }
+                <span class="keyword">if</span> minute &gt;= fallAsleep &amp;&amp; minute &lt; wakeUp {
+                    minuteDict[minute, default: <span class="number">0</span>] += <span class="number">1</span>
+                }
+            }
+        }
+    }
+    <span class="keyword">return</span> minuteDict
+} <span class="type">I</span>
+</code></pre><p>I make a dateFormatter that will pull out just the minute value from a date (because that is all that is relevant in the given data), and a dictionary to hold the minutes and counts. Then I loop through every value from 0 up to 60 (all of the minute values), and inside of that, loop through all of the dates in the array. Again, I only check the even-indexed items because those are the “falling asleep” dates. I use my minute formatted to get the <code>fallAsleep</code> minute and the <code>wakeUp</code> minute and if the current minute is between those two values, I add 1 to the dictionary value at the current minute’s key. This is not the most efficient way to do this, but it works and is efficient enough for the given data.</p><p>Finally, my main function to solve the problem looks like this:</p><pre><code><span class="keyword">func</span> findSleepyGuard1(<span class="keyword">_</span> string: <span class="type">String</span>) -&gt; <span class="type">Int</span> {
+    <span class="keyword">let</span> timestampDict = <span class="call">parseInput</span>(string)
+    <span class="keyword">let</span> sleepCount = <span class="call">countMinutesAsleep</span>(timestampDict)
+
+    <span class="keyword">guard let</span> biggest = sleepCount.<span class="call">max</span>(by: { $0.<span class="property">value</span> &lt; $1.<span class="property">value</span> }) <span class="keyword">else</span> { <span class="keyword">return</span> -<span class="number">1</span> }
+
+    <span class="keyword">let</span> sleepyGuardArray = timestampDict[biggest.<span class="property">key</span>] ?? []
+    <span class="keyword">let</span> minuteDict = <span class="call">countTimesAsleepAtMinute</span>(sleepyGuardArray)
+
+    <span class="keyword">guard let</span> frequentlyAsleep = minuteDict.<span class="call">max</span>(by: { $0.<span class="property">value</span> &lt; $1.<span class="property">value</span> }) <span class="keyword">else</span> { <span class="keyword">return</span> -<span class="number">1</span> }
+
+    <span class="keyword">let</span> minute = frequentlyAsleep.<span class="property">key</span>
+    <span class="keyword">let</span> guardId = <span class="type">Int</span>(biggest.<span class="property">key</span>.<span class="call">components</span>(separatedBy: <span class="type">CharacterSet</span>(charactersIn: <span class="string">"#"</span>)).<span class="call">joined</span>()) ?? <span class="number">0</span>
+
+    <span class="keyword">return</span> minute * guardId
+}
+</code></pre><p>I get a dictionary of the times each guard is asleep from the <code>pasreInput()</code> function and a dictionary of how many minutes each guard spent asleep from the <code>countMinutesAsleep()</code> function. I pull the guard who was asleep the most out of that dictionary, and then I call	<code>countTimesAsleepAtMinute()</code> with their associated dates. I pull the minute they were frequently asleep out of that dictionary and then multiply it by the guard’s ID number.</p><p>The answer for my input was <code>85296</code> and it takes about 40 milliseconds to find it using the Swift script method described in <a href="{{"/Advent-of-Code-2018-Setup" | absolute_url}}">my AoC Setup post</a>.</p><h2><a href="https://adventofcode.com/2018/day/4#part2">Problem 2</a></h2><p>I would describe the second problem like this: given the same input String, return an Int which is the ID number of the guard who is asleep at the same minute the most, times the minute at which they are asleep the most. The sample data returns <code>4455</code>.</p><h3>Method</h3><p>This is how I solved this problem: - Use the same <code>parseInput()</code> function to get a dictionary of guard IDs and arrays of dates. - Write a function that does the same thing as <code>countTimesAsleepAtMinute()</code> in the previous part, but does it for every guard and returns a dictionary of guard IDs and minute dictionaries. - Once I have that dictionary, find the guard who was asleep the most frequently at any given minute. - Return the minute times the guard’s ID</p><h3>Implementation</h3><p>My new <code>countTimesAsleepAtMinute()</code> function looks like this:</p><pre><code><span class="keyword">func</span> countTimesAsleepAtMinute(<span class="keyword">_</span> dates: [<span class="type">String</span>: [<span class="type">Date</span>]]) -&gt; [<span class="type">String</span>: [<span class="type">Int</span>: <span class="type">Int</span>]] {
+    <span class="keyword">let</span> minuteFormatter = <span class="type">DateFormatter</span>()
+    minuteFormatter.<span class="property">dateFormat</span> = <span class="string">"mm"</span>
+
+    <span class="keyword">var</span> minuteDict: [<span class="type">String</span>: [<span class="type">Int</span>: <span class="type">Int</span>]] = [:]
+    <span class="keyword">for</span> (guardID, times) <span class="keyword">in</span> dates {
+      <span class="keyword">for</span> (guardID, times) <span class="keyword">in</span> dates {
+      minuteDict[guardID] = <span class="call">countTimesAsleepAtMinute</span>(times)
+      ß}
+    }
+    <span class="keyword">return</span> minuteDict
+}
+</code></pre><p>I’ve added yet another loop outside of the others calls my old <code>countTimesAsleepAtMinute()</code> function, and it saves the resulting array into the result dictionary, using the guard’s ID as the key. This is where the efficiency of those inner loops starts to make a difference, but for the given data, the extra time it takes is still negligible.</p><p>My main function looks like this:</p><pre><code><span class="keyword">func</span> findSleepyGuard2(<span class="keyword">_</span> string: <span class="type">String</span>) -&gt; <span class="type">Int</span> {
+    <span class="keyword">let</span> timestampDict = <span class="call">parseInput</span>(string)
+    <span class="keyword">let</span> minuteDict = <span class="call">countTimesAsleepAtMinute</span>(timestampDict)
+
+    <span class="keyword">var</span> mostMinutes: (key: <span class="type">Int</span>, value: <span class="type">Int</span>) = (<span class="number">0</span>, <span class="number">0</span>)
+    <span class="keyword">var</span> consistentlySleepyGuard = <span class="string">""</span>
+    <span class="keyword">for</span> (guardId, dict) <span class="keyword">in</span> minuteDict {
+        <span class="keyword">guard let</span> max = dict.<span class="call">max</span>(by: { $0.<span class="property">value</span> &lt; $1.<span class="property">value</span> }) <span class="keyword">else</span> { <span class="keyword">continue</span> }
+        <span class="comment">//print("Guard \(guardId) was asleep at minute \(max.key) \(max.value) times")</span>
+        <span class="keyword">if</span> max.<span class="property">value</span> &gt; mostMinutes.<span class="property">value</span> {
+            mostMinutes = max
+            consistentlySleepyGuard = guardId
+        }
+    }
+
+    <span class="keyword">let</span> minute = mostMinutes.<span class="property">key</span>
+    <span class="keyword">let</span> guardId = <span class="type">Int</span>(consistentlySleepyGuard.<span class="call">components</span>(separatedBy: <span class="type">CharacterSet</span>(charactersIn: <span class="string">"#"</span>)).<span class="call">joined</span>()) ?? <span class="number">0</span>
+
+    <span class="keyword">return</span> minute * guardId
+}
+</code></pre><p>I get a dictionary of guard IDs and arrays of dates from the <code>parseInput()</code> function and I get a dictionary of guard IDs and dictionaries of minutes and minute counts from the <code>countTimesAsleepAtMinute()</code> function. Then I make variables to hold a tuple of the mostMinutes info and a string of the most consistently sleep guard. Then I loop through all the keys and values in the dictionary, pull the max value out of the value dictionary and if it’s value is bigger than the current <code>mostMinutes</code>, set <code>mostMinutes</code> to it and set the <code>consistentlySleepyGuard</code> to the current key. At the end, I return the guard ID number times the minute.</p><p>The answer for my input was <code>58559</code> and it takes about 0.2 seconds to find it using the script method.</p><h2>Reflections</h2><ul><li>This problem gave me the opportunity to practice with dictionaries and arrays, and nesting them within each other.</li><li>It also forced me to think about the computation complexity nested loops.</li></ul><p>You can find all the code for my attempts so far in <a href="https://github.com/dillon-mce/advent-of-code-2018">my advent of code 2018 repository on GitHub</a>.</p></div><span>Tagged with: </span><ul class="tag-list"><li><a href="/tags/adventofcode">adventofcode</a></li></ul></article></div><footer><p>© 2022 Dillon McElhinney. Generated with <a href="https://github.com/johnsundell/publish">Publish</a> ⚡️ fueled by <a href="https://www.buymeacoffee.com/dilloncodes">coffee</a> ☕️</p></footer></body></html>

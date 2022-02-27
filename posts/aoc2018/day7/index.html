@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="og:site_name" content="Dev with Dillon"/><link rel="canonical" href="https://dillon-mce.com/posts/aoc2018/day7"/><meta name="twitter:url" content="https://dillon-mce.com/posts/aoc2018/day7"/><meta name="og:url" content="https://dillon-mce.com/posts/aoc2018/day7"/><title>Advent of Code 2018 - Day 7 | Dev with Dillon</title><meta name="twitter:title" content="Advent of Code 2018 - Day 7 | Dev with Dillon"/><meta name="og:title" content="Advent of Code 2018 - Day 7 | Dev with Dillon"/><meta name="description" content="My understanding of Day 7’s first problem is this: given a  series of instructions like the one below, return a String which is the correct order in which the instructions will be executed."/><meta name="twitter:description" content="My understanding of Day 7’s first problem is this: given a  series of instructions like the one below, return a String which is the correct order in which the instructions will be executed."/><meta name="og:description" content="My understanding of Day 7’s first problem is this: given a  series of instructions like the one below, return a String which is the correct order in which the instructions will be executed."/><meta name="twitter:card" content="summary"/><link rel="stylesheet" href="/styles.css" type="text/css"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/images/favicon.png" type="image/png"/><link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to Dev with Dillon"/></head><body class="item-page"><header><div class="wrapper"><div class="inner-header"><a href="/" class="logo"><img src="/images/logo.png" alt="Dillon's memoji" class="logo-image"/>Dev with Dillon</a><nav><ul><li><a href="/posts" class="selected">Blog</a></li><li><a href="/resume">CV</a></li></ul></nav></div></div></header><div class="wrapper"><article><h1>Advent of Code 2018 - Day 7</h1><p class="read-time">9 minute read</p><div class="content"><h2><a href="https://adventofcode.com/2018/day/7">Problem 1</a></h2><p>My understanding of Day 7’s first problem is this: given a series of instructions like the one below, return a String which is the correct order in which the instructions will be executed. The sample data returns <code>"CABDFE"</code>.</p><pre><code><span class="type">Step C</span> must be finished before step <span class="type">A</span> can begin.
+<span class="type">Step C</span> must be finished before step <span class="type">F</span> can begin.
+<span class="type">Step A</span> must be finished before step <span class="type">B</span> can begin.
+<span class="type">Step A</span> must be finished before step <span class="type">D</span> can begin.
+<span class="type">Step B</span> must be finished before step <span class="type">E</span> can begin.
+<span class="type">Step D</span> must be finished before step <span class="type">E</span> can begin.
+<span class="type">Step F</span> must be finished before step <span class="type">E</span> can begin.
+</code></pre><h3>Method</h3><p>My method for solving this problem looks like this: - Parse the input into a dictionary which holds steps that are dependent on others as the key and an array of the steps they are dependent as the value, and an array of all the steps that need to be executed, sorted alphabetically. - Make a set to hold the steps which are completed, and an array to hold the order all the steps in the order they are completed. - Using a similar method to <a href="{{"/Advent-of-Code-2018-Day-5" | absolute_url}}">the collapsing polymer problem</a>, loop through a while loop until the letter array is empty.	- Inside of that outer loop, loop through the array until a step that can be executed is found.	- Execute that step. Insert it into the set of completed steps, append it to the results array, and remove it from the letter array. - After the while loop, return the results array joined into a string.</p><h3>Implementation</h3><p>My <code>parseInput()</code> function looks like this:</p><pre><code><span class="keyword">func</span> parseInput(<span class="keyword">_</span> string: <span class="type">String</span>) -&gt; ([<span class="type">String</span>: [<span class="type">String</span>]], [<span class="type">String</span>]) {
+    <span class="keyword">let</span> array = string.<span class="call">components</span>(separatedBy: .<span class="dotAccess">newlines</span>))
+    <span class="keyword">var</span> dependencyDict: [<span class="type">String</span>: [<span class="type">String</span>]] = [:]
+    <span class="keyword">var</span> letterSet: <span class="type">Set</span>&lt;<span class="type">String</span>&gt; = <span class="type">Set</span>()
+    <span class="keyword">for</span> line <span class="keyword">in</span> array {
+        <span class="keyword">let</span> letters = line.<span class="call">components</span>(separatedBy: .<span class="dotAccess">whitespaces</span>).<span class="call">filter</span>() { $0.<span class="property">count</span> == <span class="number">1</span> }
+        dependencyDict[letters[<span class="number">1</span>], <span class="keyword">default</span>: []].<span class="call">append</span>(letters[<span class="number">0</span>])
+        letterSet.<span class="call">insert</span>(letters[<span class="number">0</span>])
+        letterSet.<span class="call">insert</span>(letters[<span class="number">1</span>])
+    }
+    <span class="keyword">let</span> letterArray = <span class="type">Array</span>(letterSet).<span class="call">sorted</span>()
+    <span class="keyword">return</span> (dependencyDict, letterArray)
+}
+</code></pre><p>First, I break the string into an array split on newlines. Then I set up a dictionary to hold the steps that are dependent and an array of the steps they are dependent on and a set to hold all of the steps that need to be executed. Then I loop through each line in the array, break it up by splitting on whitespaces and filtering for single character elements. I add the dependency to the dependency dict and make sure both letters are in the letter set. At the end I make an array from the letter set, sort it, and then return a tuple of the dependency dictionary and a letter array.</p><p>My main function for part 1 looks like this:</p><pre><code><span class="keyword">func</span> figureOutOrder(<span class="keyword">_</span> string: <span class="type">String</span>) -&gt; <span class="type">String</span> {
+    <span class="keyword">var</span> (dependencyDict, letterArray) = <span class="call">parseInput</span>(string)
+
+    <span class="keyword">var</span> completedSet: <span class="type">Set</span>&lt;<span class="type">String</span>&gt; = <span class="type">Set</span>()
+    <span class="keyword">var</span> results: [<span class="type">String</span>] = []
+    <span class="keyword">while</span> letterArray.<span class="property">count</span> &gt; <span class="number">0</span> {
+        <span class="keyword">for</span> index <span class="keyword">in</span> <span class="number">0</span>..&lt;letterArray.<span class="property">count</span> {
+            <span class="keyword">let</span> letter = letterArray[index]
+            <span class="keyword">let</span> dependencies = dependencyDict[letter]?.<span class="call">filter</span>() { !completedSet.<span class="call">contains</span>($0) }
+            <span class="keyword">if</span> dependencies == <span class="keyword">nil</span> || dependencies == [] {
+                completedSet.<span class="call">insert</span>(letter)
+                results.<span class="call">append</span>(letter)
+                letterArray.<span class="call">remove</span>(at: index)
+                <span class="keyword">break</span>
+            }
+        }
+    }
+    <span class="keyword">return</span> results.<span class="call">joined</span>()
+}
+</code></pre><p>First, I get my dependency dictionary and letter array by calling <code>parseInput()</code> and set up variables to hold the completed steps and the resulting order. Then, inside a while loop that will continue until the letter array is empty, loop through the letter array until a letter is found that has no dependencies or, all of whose dependencies have been completed. Once one is found, I insert it into the completed set, add it to the results array, remove it from the letter array and break out of the current loop. Restarting from the beginning of the array every time a step is completed insures that if two steps could be completed at the same time, they will be completed in alphabetical order, as stipulated in the directions. Once the while loop completes, return the results array <code>.joined()</code></p><p>The answer for my input was <code>"CHILFNMORYKGAQXUVBZPSJWDET"</code> and it takes about 2 milliseconds to find using the command line method described in <a href="{{"/Advent-of-Code-2018-Setup" | absolute_url}}">my AoC setup post</a>.</p><h2><a href="https://adventofcode.com/2018/day/7#part2">Problem 2</a></h2><p>I would describe the second problem like this: given the same set of instructions before, assuming that each step takes 60 seconds plus the letter’s index (e.g. A=61, B=62, Z=86) and assuming that there are up to five workers working on concurrent steps, return an Int which is how many seconds it will take to complete all the instructions.</p><h3>Method</h3><p>How I solved this problem: - Write a helper function to build a dictionary of how long each step will take. - Add a custom Queue struct to represent a worker.	- Has a private array to hold its work	- A computed property which is the step it is currently working on (optional)	- A function to push a new step onto the queue, a given number of times	- A function to pop an element off of the queue - Use the same <code>parseInput()</code> method to get a dependency dictionary and letter array, use the helper function to get a dictionary of letter values, set up an array of Queues to hold the workers based on the number passed into the function, make a set to hold completed steps, a set to hold steps being worked on, and an Int variable to hold the resulting number of seconds. - Similar to part 1, make a while loop that will continue until the letter array is empty. - The while loop will have two sections, the first will cycle through the queues and complete one “second” of each of their work and update the letter array if any of them finish. The second part will loop through all the remaining letters, try to find one with no dependencies, and if there are any open queues, add it to that queue. - Each cycle through the while loop will add one second to the result “timer”</p><h3>Implementation</h3><p>My helper function to set up the dictionary of letter values looks like this:</p><pre><code><span class="keyword">func</span> setupLetterValueDictionary(<span class="keyword">_</span> offset: <span class="type">Int</span>) -&gt; [<span class="type">String</span>: <span class="type">Int</span>] {
+    <span class="keyword">let</span> alphabet = <span class="string">"abcdefghijklmnopqrstuvwxyz"</span>.<span class="call">uppercased</span>()
+    <span class="keyword">var</span> value = <span class="number">1</span> + offset
+    <span class="keyword">var</span> result: [<span class="type">String</span>: <span class="type">Int</span>] = [:]
+    <span class="keyword">for</span> letter <span class="keyword">in</span> alphabet {
+        result[<span class="type">String</span>(letter)] = value
+        value += <span class="number">1</span>
+    }
+    <span class="keyword">return</span> result
+}
+</code></pre><p>Nothing very interesting, it just loops through the alphabet and adds the associated value to a dictionary at the key for each letter.</p><p>My custom Queue looks like this:</p><pre><code><span class="keyword">class</span> Queue&lt;T&gt; {
+    <span class="keyword">private var</span> queue: [<span class="type">T</span>] = []
+
+    <span class="keyword">var</span> currentlyWorkingOn: <span class="type">T</span>? {
+        <span class="keyword">return</span> queue.<span class="property">first</span>
+    }
+
+    <span class="keyword">func</span> push(<span class="keyword">_</span> string: <span class="type">T</span>, times: <span class="type">Int</span>) {
+        <span class="keyword">for _ in</span> <span class="number">0</span>..&lt;times {
+            queue.<span class="call">append</span>(string)
+        }
+    }
+
+    <span class="keyword">func</span> pop() {
+        <span class="keyword">if</span> queue.<span class="property">count</span> &gt; <span class="number">0</span> {
+            queue.<span class="call">remove</span>(at: <span class="number">0</span>)
+        }
+    }
+}
+</code></pre><p>It is generic, mostly in case I need to reuse it in future code challenges. It has a private queue which is held in an array. It has a computed property which returns an optional element that is the first element of the queue or nil if it is empty. It has a function to push a new element onto the queue a given number of times, and it has a function to pop the first element off the queue. I did not return the element that is popped, because it isn’t necessary here.</p><p>The setup section of my main function looks like this:</p><pre><code><span class="keyword">var</span> (dependencyDict, letterArray) = <span class="call">parseInput</span>(string)
+<span class="keyword">let</span> letterValueDict = <span class="call">setupLetterValueDictionary</span>(timeAddition)
+<span class="keyword">var</span> queues: [<span class="type">Queue</span>&lt;<span class="type">String</span>&gt;] = []
+<span class="keyword">for _ in</span> <span class="number">0</span>..&lt;numOfWorkers {
+    queues.<span class="call">append</span>(<span class="type">Queue</span>())
+}
+<span class="keyword">var</span> completedSet: <span class="type">Set</span>&lt;<span class="type">String</span>&gt; = <span class="type">Set</span>()
+<span class="keyword">var</span> currentlyWorkingOn: <span class="type">Set</span>&lt;<span class="type">String</span>&gt; = <span class="type">Set</span>()
+<span class="keyword">var</span> result: <span class="type">Int</span> = <span class="number">0</span>
+</code></pre><p>I get the dependency dictionary and letter array by calling <code>parseInput()</code>, I get the letter values by calling <code>setupLetterValueDictionary()</code>, and I set up an array of queues to which I add as many queues as are called for when the function is called. I also make a set to hold the completed steps, a set to hold the steps that are being worked on, and a variable to hold the resulting number of seconds.</p><p>The first part of the while loop in the main function looks like this:</p><pre><code><span class="keyword">while</span> letterArray.<span class="property">count</span> &gt; <span class="number">0</span> {
+        <span class="keyword">for</span> queue <span class="keyword">in</span> queues {
+            <span class="keyword">let</span> previouslyWorking = queue.<span class="property">currentlyWorkingOn</span>
+            queue.<span class="call">pop</span>()
+            <span class="keyword">if</span> previouslyWorking != queue.<span class="property">currentlyWorkingOn</span> {
+                <span class="keyword">if let</span> previouslyWorking = previouslyWorking {
+                    completedSet.<span class="call">insert</span>(previouslyWorking)
+                }
+            }
+        }
+        letterArray = letterArray.<span class="call">filter</span>() { !completedSet.<span class="call">contains</span>( $0 ) }
+        <span class="keyword">if</span> letterArray.<span class="property">count</span> == <span class="number">0</span> { <span class="keyword">break</span> }
+</code></pre><p>I loop through each queue, grab a reference to what it was working on, and then pop the first element. Then I check to see if the previous element is not the same as the current element. Because we are only adding one step to each queue at a time, we know that the only time they would be different is if we had some step in the queue and now we don’t. That means we’ve finished that step, so we’ll insert it into the set of completed letters. Then we filter the letter array to only have the letters that haven’t been completed and check to see if it is empty. If it is, that means we’re done and we break out of the loop.</p><p>The second half of the while loop looks like this:</p><pre><code>     <span class="keyword">for</span> letter <span class="keyword">in</span> letterArray {
+            <span class="keyword">let</span> dependencies = dependencyDict[letter]?.<span class="call">filter</span>() { !completedSet.<span class="call">contains</span>( $0 ) }
+            <span class="keyword">if</span> (dependencies == <span class="keyword">nil</span> || dependencies == []) &amp;&amp; !currentlyWorkingOn.<span class="call">contains</span>(letter) {
+                <span class="keyword">for</span> queue <span class="keyword">in</span> queues {
+                    <span class="keyword">if</span> queue.<span class="property">currentlyWorkingOn</span> == <span class="keyword">nil</span> {
+                        <span class="keyword">let</span> times = letterValueDict[letter]!
+                        queue.<span class="call">push</span>(letter, times: times)
+                        currentlyWorkingOn.<span class="call">insert</span>(letter)
+                        <span class="keyword">break</span>
+                    }
+                }
+            }
+        }
+        result += <span class="number">1</span>
+    }
+</code></pre><p>Here we first loop through the letters left in the letterArray, try to find one that doesn’t have any dependencies or all of whose dependencies have been completed, and that isn’t already being worked on by some other queue. If we find one, we’ll loop through all the queues and try to find one that isn’t already working on something. If we find one, we get the number of seconds that step will take to complete from the dictionary, push it onto the queue, insert it into the set of steps currently being worked on, and break out of this loop through the queues. At the end of each pass through the while loop, we add one to the resulting seconds. And after the while loop completes, return the result</p><p>The answer for my input is <code>891</code> with 5 workers and a 60 second offset. It takes about 45 milliseconds to calculate on the command line.</p><h2>Reflections</h2><ul><li>This problem gave me some good practice with using Sets and Dictionaries.</li><li>It also forced me to figure out a way to work out queues/concurrency with a possible different number of tasks being worked on at the same time.</li><li>It also gave me the opportunity to figure out how to simulate the passage of time.</li></ul><p>You can find all the code for my attempts so far in <a href="https://github.com/dillon-mce/advent-of-code-2018">my advent of code 2018 repository on GitHub</a>.</p></div><span>Tagged with: </span><ul class="tag-list"><li><a href="/tags/adventofcode">adventofcode</a></li></ul></article></div><footer><p>© 2022 Dillon McElhinney. Generated with <a href="https://github.com/johnsundell/publish">Publish</a> ⚡️ fueled by <a href="https://www.buymeacoffee.com/dilloncodes">coffee</a> ☕️</p></footer></body></html>
