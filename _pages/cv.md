@@ -92,7 +92,10 @@ CoreAnimation, UIKit
 {% include gallery id="gallery_2" %}
 
 ## Previous Employers
-**[Ibotta][ibotta] – Mobile Engineer | 11/19 - Present**  
+**[Hallow][hallow] - Lead iOS Engineer | 06/21 - Present**
+Hallow (pronounced like aloe) is a prayer and meditation app, focused primarily on audio experiences that help promote spiritual, mental and physical growth. My primary responsibility is to add features to the iOS app and to squash bugs that pop up along the way.
+
+**[Ibotta][ibotta] – Senior Mobile Engineer | 11/19 - 06/21**  
 Ibotta is a Denver based mobile technology company that strives to "make every purchase rewarding" by enabling its users to earn cash back on purchases in a variety of ways. I work as an iOS engineer on the Radical Simplification team, focused on making the [iOS app][ibotta-app] simpler and easier to use.
 
 **[Madwire][madwire] – Mobile Software Engineer | 07/19 - 11/19**  
