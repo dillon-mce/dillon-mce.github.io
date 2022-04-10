@@ -47,15 +47,18 @@ gallery_3:
     title: "Progress tracking screen in StudySwipe"
 ---
 
-About two years ago I left my comfortable career of managing the live production environment for churches to study in this crazy new iOS development program at [Lambda School][lambda]. I spent basically all day every day for nine months reading and writing Swift and learning how to build iOS apps.
+A little over three years ago I left my comfortable career of managing the live production environment for churches to study in the new-at-the-time iOS development program at [Lambda School (now called Bloom Institute of Technology)][lambda]. I spent basically all day every day for nine months reading and writing Swift and learning how to build iOS apps.
 
 I did well enough that after ten weeks they asked me to pause my studies for a little bit and act as the class lead for a new cohort of students. So for ten weeks in the middle of my time at Lambda, I was the class lead for the iOS4 cohort, helping students who needed help, reviewing/debugging their code, and presenting code challenges.
 
 Ten days after finishing that course, I started a job at [Madwire][madwire] working on their [Top Rated Local][trl] app. We used a modified version of the [VIPER architecture][clean-swift], shot for 100% code coverage with our unit tests and generated all our UI programmatically so I got a crash course in all three of those things there.
 
-Most recently, I accepted position at [Ibotta][ibotta], working on their [iOS app][ibotta-app] as a part of the Radicial Simplification team. Our goal is to reduce friction as much as possible for the users of the app by showing them (only) content they care about and removing unnecessary roadblocks in the process of earning rewards.
+After that I joined [Ibotta][ibotta], working on their [iOS app][ibotta-app] as a part of the Radicial Simplification team. Our goal was to reduce friction as much as possible for the users of the app by showing them (only) content they care about and removing unnecessary roadblocks in the process of earning rewards. I got to work with some incredible people and learned a lot about iOS architecture and working cross-functionally in a large organization while I was there.
 
-For the six years prior to starting Lambda I was a technical director at a couple of different churches, and I’ve been [a photographer on the side](http://light-and-lens.com) for the last few years. I’ve noticed that a lot of the skills I picked up doing those things transfer pretty well to programming. You have to be able to read documentation. You have to be able to learn stuff for yourself. You have to figure out how to solve problems in creative (and sustainable, and repeatable)  ways. And you have to think about the user’s experience every step of the way. I enjoy applying those skills to the work I do now, and I'm sure they'll serve me well for whatever comes next!
+Most recently I accepted a position as Lead iOS Developer at [Hallow][hallow], a prayer and meditation app. At Hallow I am responsible for the iOS app, maintaining the code base, establishing best practice and releasing new features and bug fixes on a regular cadence.
+
+
+I have also been [a photographer/videographer in my free time](http://light-and-lens.com) for the last several years. I’ve noticed there is a surprising amount of overlap between doing those things and software development. You have to be able to read documentation. You have to be able to learn stuff for yourself. You have to figure out how to solve problems in creative (and sustainable, and repeatable)  ways. And you have to think about the user’s experience every step of the way. I enjoy applying those skills to the work I do now, and I'm sure they'll serve me well for whatever comes next!
 
 -----
 *...Dillon has a clear attention to detail, which is a trait that is very hard to find (or train). He thinks through problems patiently, has a knack for noticing edge cases, and also seems like an amiable and friendly person to work with. He was able to answer every theoretical question and solve every problem I asked him to solve without any issue…*  
@@ -114,3 +117,4 @@ I primarily studied ancient Greek and Hebrew at Ozark, along with general psycho
 [lambda]: https://lambdaschool.com/
 [clean-swift]: https://clean-swift.com/
 [trl]: https://apps.apple.com/us/app/top-rated-local/id1270356201?uo=4
+[hallow]: https://hallow.com
