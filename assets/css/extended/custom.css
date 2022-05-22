@@ -32,7 +32,7 @@ h1 a:hover,
 
 .post-content blockquote {
   color: var(--secondary);
-  margin: 40px;
+  margin: var(--gap);
   font-style: oblique;
   font-size: 1.2em;
   font-weight: lighter;
