@@ -75,9 +75,9 @@ params:
     - name: cv
       url: /cv
 
-  # analytics:
-  #   google:
-  #     SiteVerificationTag: "XYZabc"
+  analytics:
+    google:
+      SiteVerificationTag: "G-YZRJY88933"
   #   bing:
   #     SiteVerificationTag: "XYZabc"
   #   yandex:
