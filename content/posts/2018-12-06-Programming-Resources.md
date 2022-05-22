@@ -3,6 +3,7 @@ date: 2018-12-06
 title: Programming Resources
 slug: programming-resources
 tags: ["Resources"]
+weight: 1
 description: A list of some good resources I've come across in my time trying to learn programming. It isn't comprehensive, but I've had some people ask about resources to look into, so I thought I'd put my list together in one place.
 ---
 This is a list of some good resources I've come across in my time trying to learn programming. It isn't comprehensive, but I've had some people ask about resources to look into, so I thought I'd put my list together in one place. If you have a good resource you think is worth adding, let me know and I'll take a look.
