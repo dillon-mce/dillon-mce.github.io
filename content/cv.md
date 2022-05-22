@@ -1,5 +1,6 @@
 ---
 hideMeta: true
+disableShare: true
 ---
 # Curriculum Vitae
 
