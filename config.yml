@@ -75,14 +75,6 @@ params:
     - name: cv
       url: /cv
 
-  analytics:
-    google:
-      SiteVerificationTag: "G-YZRJY88933"
-  #   bing:
-  #     SiteVerificationTag: "XYZabc"
-  #   yandex:
-  #     SiteVerificationTag: "XYZabc"
-
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
