@@ -1,0 +1,78 @@
+.chroma {
+  background-color: unset;
+}
+
+a {
+  color: var(--accent);
+}
+
+h1 a,
+.terms-tags a,
+.social-icons a,
+.share-buttons a,
+.muted {
+  color: var(--secondary);
+}
+
+h1 a:hover,
+.social-icons a:hover,
+.share-buttons a:hover,
+.muted:hover {
+  color: var(--accent);
+}
+
+.recents {
+  margin-bottom: 20px;
+}
+
+.nav a,
+.logo > a {
+  color: var(--primary);
+}
+
+.post-content blockquote {
+  color: var(--secondary);
+  margin: 40px;
+  font-style: oblique;
+  font-size: 1.2em;
+  font-weight: lighter;
+  text-align: center;
+  border-inline-start: 0px;
+}
+
+.list,
+.share-buttons {
+  background-color: var(--theme);
+  border-width: 0px;
+}
+
+.post-entry {
+    border-width: 0px;
+    padding: calc(var(--gap) / 2);
+}
+
+/* Scroll Bar Stuff */
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary);
+    border-radius: var(--radius);
+    border-width: 0px;
+}
+
+.list:not(.dark)::-webkit-scrollbar-thumb {
+    border-width: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--tertiary);
+}
+
+/* My Colors */
+:root {
+    --accent: rgb(82, 172, 200);
+    --primary: rgb(50, 50, 50);
+    --entry: rgb(245, 245, 245);
+}
+
+.dark {
+    --accent: rgb(125, 194, 214);
+}

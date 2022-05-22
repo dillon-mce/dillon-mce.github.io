@@ -1,0 +1,128 @@
+baseURL: https://dillon-mce.com
+languageCode: en-us
+title: Develop with Dillon
+
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics:
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Develop with Dillon
+  description: "ExampleSite description"
+  keywords: [Blog, Portfolio]
+  author: Dillon McElhinney
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShareButtons: ["twitter", "linkedin", "reddit"]
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  hideFooter: true
+
+  assets:
+    disableHLJS: true
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Devlop with Dillon"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my website. This is where I write about what I am learning at the moment. A lot of it is probably boring and not all that well written, but hey, no one is forcing you to read it. I just needed an outlet/excuse to write some stuff. If anyone finds any of it beneficial that is totally a bonus. Feel free to peruse at your leisure or move on if this isn't the place for you. And if you have any feedback (preferably constructive), go ahead and send it to any of the links over there to the left. Thanks!
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/dillon_mce"
+    - name: github
+      url: "https://github.com/dillon-mce"
+    - name: goodreads
+      url: "https://www.goodreads.com/dillon-mce"
+    - name: youtube
+      url: "https://www.youtube.com/channel/UCe8jmGoJOcZfmxTtK2uCo6w"
+    - name: cv
+      url: /cv
+
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/dillon-mce/dillon-mce.github.io/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: cv
+      name: CV
+      url: /cv
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+markup:
+    highlight:
+        # anchorLineNos: true
+        codeFences: true
+        guessSyntax: true
+        lineNos: false
+        style: monokai
