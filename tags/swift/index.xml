@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Writing Short Code Isn&#39;t The Point</title>
+      <link>https://dillon-mce.com/posts/writing-readable-code/</link>
+      <pubDate>Sun, 13 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dillon-mce.com/posts/writing-readable-code/</guid>
+      <description>I don&amp;rsquo;t know about you, but I have spent a lot of time trying to write code in the shortest, most elegant way possible. I have put a lot of thought and time and effort into it over the years. And I see it a lot in other people&amp;rsquo;s code as well. I have seen it from both junior and senior developers. I have seen it in new code bases and mature code bases, both large and small.</description>
+    </item>
+    
     <item>
       <title>Algorithms in Swift - Intro</title>
       <link>https://dillon-mce.com/posts/algorithms-in-swift-intro/</link>

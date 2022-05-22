@@ -2,19 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dillon-mce.com/posts/algorithms-in-swift-intro/</loc>
-    <lastmod>2019-01-14T00:00:00+00:00</lastmod>
+    <loc>https://dillon-mce.com/posts/programming-resources/</loc>
+    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dillon-mce.com/</loc>
-    <lastmod>2019-01-14T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dillon-mce.com/posts/</loc>
-    <lastmod>2019-01-14T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dillon-mce.com/tags/swift/</loc>
-    <lastmod>2019-01-14T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dillon-mce.com/tags/</loc>
+    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dillon-mce.com/posts/writing-readable-code/</loc>
+    <lastmod>2022-03-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dillon-mce.com/posts/fixing-an-unfixable-bug/</loc>
+    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dillon-mce.com/tags/ios/</loc>
+    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dillon-mce.com/tags/xcode/</loc>
+    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dillon-mce.com/posts/algorithms-in-swift-intro/</loc>
     <lastmod>2019-01-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dillon-mce.com/tags/advent-of-code/</loc>
@@ -30,9 +45,6 @@
     <lastmod>2018-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dillon-mce.com/posts/aoc2018/day5/</loc>
-    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dillon-mce.com/posts/programming-resources/</loc>
     <lastmod>2018-12-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dillon-mce.com/tags/resources/</loc>

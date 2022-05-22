@@ -10,7 +10,34 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programming Resources</title>
+      <link>https://dillon-mce.com/posts/programming-resources/</link>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dillon-mce.com/posts/programming-resources/</guid>
+      <description>A list of some good resources I&amp;#39;ve come across in my time trying to learn programming. It isn&amp;#39;t comprehensive, but I&amp;#39;ve had some people ask about resources to look into, so I thought I&amp;#39;d put my list together in one place.</description>
+    </item>
+    
+    <item>
+      <title>Writing Short Code Isn&#39;t The Point</title>
+      <link>https://dillon-mce.com/posts/writing-readable-code/</link>
+      <pubDate>Sun, 13 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dillon-mce.com/posts/writing-readable-code/</guid>
+      <description>I don&amp;rsquo;t know about you, but I have spent a lot of time trying to write code in the shortest, most elegant way possible. I have put a lot of thought and time and effort into it over the years. And I see it a lot in other people&amp;rsquo;s code as well. I have seen it from both junior and senior developers. I have seen it in new code bases and mature code bases, both large and small.</description>
+    </item>
+    
+    <item>
+      <title>Fixing an Unfixable Bug</title>
+      <link>https://dillon-mce.com/posts/fixing-an-unfixable-bug/</link>
+      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dillon-mce.com/posts/fixing-an-unfixable-bug/</guid>
+      <description>If you have been an iOS developer for any length of time, you have certainly come across bugs that are hard to understand and hard to track down. And if you have an app out in the world that real human beings use you have probably encountered a bug or crash that is happening for some subset of your users, but that you cannot for the life of you reproduce on your device.</description>
+    </item>
+    
     <item>
       <title>Algorithms in Swift - Intro</title>
       <link>https://dillon-mce.com/posts/algorithms-in-swift-intro/</link>
@@ -56,15 +83,6 @@
       <description>Problem 1 My understanding of Day 5’s first problem is this: given a String like &amp;quot;dabAcCaCBAcCcaDA&amp;quot;, return an Int which is the number of characters remaining after being reduced by removing pairs of letters which are adjacent, the same letter, and opposite cases. For example &amp;quot;cC&amp;quot; and &amp;quot;Aa&amp;quot;. The sample returns 10.
 Method My method for solving this problem looks like this:
  Make an outer while loop that will continue until you make it all the way through the String without finding any pairs that can be removed.</description>
-    </item>
-    
-    <item>
-      <title>Programming Resources</title>
-      <link>https://dillon-mce.com/posts/programming-resources/</link>
-      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://dillon-mce.com/posts/programming-resources/</guid>
-      <description>A list of some good resources I&amp;#39;ve come across in my time trying to learn programming. It isn&amp;#39;t comprehensive, but I&amp;#39;ve had some people ask about resources to look into, so I thought I&amp;#39;d put my list together in one place.</description>
     </item>
     
     <item>
