@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Swift on Develop with Dillon</title>
+    <link>https://dillon-mce.com/tags/swift/</link>
+    <description>Recent content in Swift on Develop with Dillon</description>
+    <image>
+      <url>https://dillon-mce.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://dillon-mce.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithms in Swift - Intro</title>
+      <link>https://dillon-mce.com/posts/algorithms-in-swift-intro/</link>
+      <pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://dillon-mce.com/posts/algorithms-in-swift-intro/</guid>
+      <description>In this post, I want to talk about algorithms in general, take a look at the binary search algorithm, and examine how to think about the complexity of an algorithm.</description>
+    </item>
+    
+  </channel>
+</rss>
