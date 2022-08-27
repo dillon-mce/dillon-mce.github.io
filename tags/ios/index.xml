@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stop Throwing Away Errors</title>
+      <link>https://dillon-mce.com/posts/dont-throw-away-errors/</link>
+      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dillon-mce.com/posts/dont-throw-away-errors/</guid>
+      <description>We all know how it goes when we are trying to get something working. We want to get there as fast as we can and we get focused on the &amp;ldquo;happy path&amp;rdquo;. Maybe we&amp;rsquo;re not that familiar with the technology/language/concept, but we have one specific goal or task we are trying to achieve and we don&amp;rsquo;t care so much about the edge cases or what will happen when things go wrong.</description>
+    </item>
+    
     <item>
       <title>Fixing an Unfixable Bug</title>
       <link>https://dillon-mce.com/posts/fixing-an-unfixable-bug/</link>

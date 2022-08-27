@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Xcode on Develop with Dillon</title>
-    <link>https://dillon-mce.com/tags/xcode/</link>
-    <description>Recent content in Xcode on Develop with Dillon</description>
+    <title>Debugging on Develop with Dillon</title>
+    <link>https://dillon-mce.com/tags/debugging/</link>
+    <description>Recent content in Debugging on Develop with Dillon</description>
     <image>
       <url>https://dillon-mce.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://dillon-mce.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/xcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stop Throwing Away Errors</title>
       <link>https://dillon-mce.com/posts/dont-throw-away-errors/</link>
