@@ -1,7 +1,7 @@
 ---
 title: "Fixing an Unfixable Bug"
 date: 2022-03-06
-tags: ["iOS", "Xcode"]
+tags: ["iOS", "Xcode", "Debugging"]
 ---
 
 If you have been an iOS developer for any length of time, you have certainly come across bugs that are hard to understand and hard to track down. And if you have an app out in the world that real human beings use you have probably encountered a bug or crash that is happening for some subset of your users, but that you cannot for the life of you reproduce on your device. This is the story of one of those bugs. It was one where I went into it not having a clue what the problem was and where I fully expected to bang my head against the wall for a day without actually solving anything.
