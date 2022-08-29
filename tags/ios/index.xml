@@ -10,7 +10,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pre Build Actions</title>
+      <link>https://dillon-mce.com/posts/pre-build-actions/</link>
+      <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dillon-mce.com/posts/pre-build-actions/</guid>
+      <description>I ran into this cool little piece of functionality in Xcode the other day that helped me solve a real problem. I have never seen anyone mention that you can do this, so I&amp;rsquo;m sharing it here in the hopes that it will help someone else out.
+I was recently working with a framework which uses a configuration file. This file is stored in JSON and is bundled with the app.</description>
+    </item>
+    
     <item>
       <title>Stop Throwing Away Errors</title>
       <link>https://dillon-mce.com/posts/dont-throw-away-errors/</link>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Quick Tips on Develop with Dillon</title>
+    <link>https://dillon-mce.com/tags/quick-tips/</link>
+    <description>Recent content in Quick Tips on Develop with Dillon</description>
+    <image>
+      <url>https://dillon-mce.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://dillon-mce.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/quick-tips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pre Build Actions</title>
+      <link>https://dillon-mce.com/posts/pre-build-actions/</link>
+      <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dillon-mce.com/posts/pre-build-actions/</guid>
+      <description>I ran into this cool little piece of functionality in Xcode the other day that helped me solve a real problem. I have never seen anyone mention that you can do this, so I&amp;rsquo;m sharing it here in the hopes that it will help someone else out.
+I was recently working with a framework which uses a configuration file. This file is stored in JSON and is bundled with the app.</description>
+    </item>
+    
+  </channel>
+</rss>
