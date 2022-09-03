@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 03 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Journey Into App Development</title>
+      <link>https://dillon-mce.com/posts/my-journey-into-app-development/</link>
+      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dillon-mce.com/posts/my-journey-into-app-development/</guid>
+      <description>The Kindling My journey to start developing software as my livelihood took a while. Looking back, I realize that I was always sort of around computers. I grew up in the age when regular people started using the internet. I had to take a few typing and computer classes in school as a kid. I had a few classes that touched on web development with various tools. My dad also did some work with computers and we always had at least one desktop around the house, and often more than one.</description>
+    </item>
+    
     <item>
       <title>Pre Build Actions</title>
       <link>https://dillon-mce.com/posts/pre-build-actions/</link>
