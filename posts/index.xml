@@ -10,7 +10,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Programming Resources</title>
       <link>https://dillon-mce.com/posts/programming-resources/</link>
@@ -18,6 +18,15 @@
       
       <guid>https://dillon-mce.com/posts/programming-resources/</guid>
       <description>A list of some good resources I&amp;#39;ve come across in my time trying to learn programming. It isn&amp;#39;t comprehensive, but I&amp;#39;ve had some people ask about resources to look into, so I thought I&amp;#39;d put my list together in one place.</description>
+    </item>
+    
+    <item>
+      <title>Completion Handlers in Swift</title>
+      <link>https://dillon-mce.com/posts/completion-handlers-in-swift/</link>
+      <pubDate>Sat, 22 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dillon-mce.com/posts/completion-handlers-in-swift/</guid>
+      <description>Completion handlers are everywhere in Swift. They are commonly used in Apple&amp;rsquo;s frameworks and many third-party libraries. They are often put forward as an alternative to delegation and the target action pattern, especially in the context of long-running work like fetching data over the network or processing images. You might see them referred to as &amp;ldquo;handlers&amp;rdquo; or &amp;ldquo;completion blocks&amp;rdquo;, simply &amp;ldquo;completions&amp;rdquo;, or maybe something else depending on the conventions of the code base you are working in.</description>
     </item>
     
     <item>

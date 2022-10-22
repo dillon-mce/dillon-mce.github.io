@@ -10,22 +10,31 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dillon-mce.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOS</title>
+      <link>https://dillon-mce.com/tags/ios/</link>
+      <pubDate>Sat, 22 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dillon-mce.com/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Swift</title>
+      <link>https://dillon-mce.com/tags/swift/</link>
+      <pubDate>Sat, 22 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dillon-mce.com/tags/swift/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Development</title>
       <link>https://dillon-mce.com/tags/development/</link>
       <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://dillon-mce.com/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iOS</title>
-      <link>https://dillon-mce.com/tags/ios/</link>
-      <pubDate>Sat, 03 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://dillon-mce.com/tags/ios/</guid>
       <description></description>
     </item>
     
@@ -53,15 +62,6 @@
       <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://dillon-mce.com/tags/debugging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Swift</title>
-      <link>https://dillon-mce.com/tags/swift/</link>
-      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://dillon-mce.com/tags/swift/</guid>
       <description></description>
     </item>
     
